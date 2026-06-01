@@ -3,40 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Copilot Agent KIT — Multi-Stack Software Developer Agent
-      System</title>
-    <meta name="description"
-      content="A portable multi-stack software developer agent toolkit for GitHub Copilot with 13 specialized AI agents, 62 skills, and 36 commands." />
-    <meta name="keywords"
-      content="copilot, ai agents, software development, nuxt, react, flutter, android, laravel, devops, seo" />
+    <title>Copilot Agent KIT — Multi-Stack Software Developer Agent System</title>
+    <meta name="description" content="A portable multi-stack software developer agent toolkit for GitHub Copilot with 13 specialized AI agents, 62 skills, and 36 commands." />
+    <meta name="keywords" content="copilot, ai agents, software development, nuxt, react, flutter, android, laravel, devops, seo" />
     <meta name="author" content="defuj" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical"
-      href="https://github.com/defuj/copilot-agent-kit" />
-    <link rel="icon" type="image/svg+xml"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f5f5f5'/><text x='16' y='22' text-anchor='middle' fill='%230a0a0a' font-size='18' font-weight='700' font-family='system-ui'>K</text></svg>" />
+    <link rel="canonical" href="https://github.com/defuj/copilot-agent-kit" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f5f5f5'/><text x='16' y='22' text-anchor='middle' fill='%230a0a0a' font-size='18' font-weight='700' font-family='system-ui'>K</text></svg>" />
 
     <!-- Open Graph -->
-    <meta property="og:title"
-      content="Copilot Agent KIT — Multi-Stack Software Developer Agent System" />
-    <meta property="og:description"
-      content="A portable multi-stack software developer agent toolkit for GitHub Copilot with 13 specialized AI agents, 62 skills, and 36 commands." />
-    <meta property="og:image"
-      content="https://raw.githubusercontent.com/defuj/copilot-agent-kit/main/assets/og-image.webp" />
-    <meta property="og:url"
-      content="https://github.com/defuj/copilot-agent-kit" />
+    <meta property="og:title" content="Copilot Agent KIT — Multi-Stack Software Developer Agent System" />
+    <meta property="og:description" content="A portable multi-stack software developer agent toolkit for GitHub Copilot with 13 specialized AI agents, 62 skills, and 36 commands." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/defuj/copilot-agent-kit/main/assets/og-image.webp" />
+    <meta property="og:url" content="https://github.com/defuj/copilot-agent-kit" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Copilot Agent KIT" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title"
-      content="Copilot Agent KIT — Multi-Stack Software Developer Agent System" />
-    <meta name="twitter:description"
-      content="A portable multi-stack software developer agent toolkit for GitHub Copilot with 13 specialized AI agents, 62 skills, and 36 commands." />
-    <meta name="twitter:image"
-      content="https://raw.githubusercontent.com/defuj/copilot-agent-kit/main/assets/og-image.webp" />
+    <meta name="twitter:title" content="Copilot Agent KIT — Multi-Stack Software Developer Agent System" />
+    <meta name="twitter:description" content="A portable multi-stack software developer agent toolkit for GitHub Copilot with 13 specialized AI agents, 62 skills, and 36 commands." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/defuj/copilot-agent-kit/main/assets/og-image.webp" />
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -58,109 +46,204 @@
     }
   }
   </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              display: ['Sora', 'system-ui', 'sans-serif'],
-              body: ['IBM Plex Sans', 'system-ui', 'sans-serif'],
-              mono: ['JetBrains Mono', 'monospace'],
-            },
-            colors: {
-              bg: '#08080c',
-              surface: '#0e0e14',
-              raised: '#14141c',
-              accent: {
-                DEFAULT: '#d4a04a',
-                bright: '#e8b85e',
-                dim: 'rgba(212, 160, 74, 0.12)',
-                glow: 'rgba(212, 160, 74, 0.25)',
-              },
-              violet: {
-                DEFAULT: '#8b6cf6',
-                dim: 'rgba(139, 108, 246, 0.1)',
-                glow: 'rgba(139, 108, 246, 0.2)',
-              },
-              rose: {
-                DEFAULT: '#e06070',
-                dim: 'rgba(224, 96, 112, 0.1)',
-              },
-              teal: {
-                DEFAULT: '#4ac8b8',
-                dim: 'rgba(74, 200, 184, 0.1)',
-              },
-            },
-          },
-        },
-      }
-    </script>
-    <style>
-      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-      html { scroll-behavior: smooth; }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Rubik:wght@300;400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root {
+        --color-bg: oklch(0.04 0.015 260);
+        --color-bg-alt: oklch(0.06 0.02 260);
+        --color-surface: oklch(0.08 0.015 260);
+        --color-raised: oklch(0.10 0.015 260);
+        --color-primary: oklch(0.55 0.18 280);
+        --color-primary-hover: oklch(0.60 0.20 280);
+        --color-primary-dim: oklch(0.55 0.18 280 / 0.12);
+        --color-primary-glow: oklch(0.55 0.18 280 / 0.25);
+        --color-secondary: oklch(0.50 0.10 250);
+        --color-secondary-dim: oklch(0.50 0.10 250 / 0.1);
+        --color-tertiary: oklch(0.65 0.12 190);
+        --color-text: oklch(0.85 0.008 260);
+        --color-text-heading: oklch(0.95 0.005 260);
+        --color-text-muted: oklch(0.50 0.01 260);
+        --color-border: oklch(1 0 0 / 0.06);
+        --color-border-hover: oklch(1 0 0 / 0.12);
+        --color-success: oklch(0.60 0.15 145);
+        --color-warning: oklch(0.68 0.14 85);
+        --color-error: oklch(0.58 0.18 30);
+
+        --agent-nuxt: oklch(0.55 0.18 250);
+        --agent-react: oklch(0.60 0.15 195);
+        --agent-backend: oklch(0.55 0.15 145);
+        --agent-laravel: oklch(0.60 0.16 30);
+        --agent-ci3: oklch(0.60 0.14 85);
+        --agent-android: oklch(0.55 0.14 160);
+        --agent-flutter: oklch(0.60 0.14 210);
+        --agent-designer: oklch(0.63 0.15 35);
+        --agent-reviewer: oklch(0.55 0.18 5);
+        --agent-database: oklch(0.50 0.14 250);
+        --agent-devops: oklch(0.52 0.16 270);
+        --agent-seo: oklch(0.58 0.12 185);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
 
       body {
-        font-family: 'IBM Plex Sans', system-ui, sans-serif;
-        background: var(--bg, #08080c);
-        color: oklch(0.55 0.01 260);
+        margin: 0;
+        background: var(--color-bg);
+        color: var(--color-text);
+        font-family: 'Rubik', system-ui, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;
       }
 
-      h1, h2, h3, h4, h5, h6 {
-        font-family: 'Sora', system-ui, sans-serif;
-        color: oklch(0.92 0.005 260);
+      /* ───────────── Scrollbar ───────────── */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: var(--color-raised); border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
+
+      /* ───────────── Hero Stagger Lines ───────────── */
+      .hero-line {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: heroReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .hero-line:nth-child(1) { animation-delay: 0.2s; }
+      .hero-line:nth-child(2) { animation-delay: 0.5s; }
+      .hero-line:nth-child(3) { animation-delay: 0.8s; }
+
+      @keyframes heroReveal {
+        to { opacity: 1; transform: translateY(0); }
       }
 
-      /* ===== NOISE OVERLAY ===== */
-      .noise-overlay {
-        position: fixed;
-        inset: 0;
-        z-index: 0;
-        pointer-events: none;
-        opacity: 0.025;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-        background-size: 128px 128px;
-      }
-
-      /* ===== AMBIENT GLOWS ===== */
-      .ambient {
-        position: fixed;
-        z-index: 0;
-        pointer-events: none;
+      /* ───────────── Ambient Orbs ───────────── */
+      .orb {
+        position: absolute;
         border-radius: 50%;
-        filter: blur(100px);
+        filter: blur(80px);
+        opacity: 0;
+        animation: orbFade 3s ease-out forwards;
+        pointer-events: none;
       }
-      .ambient-1 {
-        width: 600px; height: 600px;
-        top: -200px; right: -100px;
-        background: radial-gradient(circle, rgba(212, 160, 74, 0.04), transparent 70%);
-      }
-      .ambient-2 {
+      .orb-1 {
         width: 500px; height: 500px;
-        bottom: 10%; left: -150px;
-        background: radial-gradient(circle, rgba(139, 108, 246, 0.03), transparent 70%);
+        background: var(--color-primary-glow);
+        top: -10%; left: -5%;
+        animation-delay: 0.3s;
       }
-      .ambient-3 {
+      .orb-2 {
         width: 400px; height: 400px;
-        top: 50%; right: 10%;
-        background: radial-gradient(circle, rgba(224, 96, 112, 0.02), transparent 70%);
+        background: oklch(0.50 0.10 250 / 0.15);
+        bottom: -5%; right: -8%;
+        animation-delay: 0.6s;
+      }
+      .orb-3 {
+        width: 300px; height: 300px;
+        background: oklch(0.55 0.18 280 / 0.08);
+        top: 40%; right: 15%;
+        animation-delay: 0.9s;
       }
 
-      /* ===== SCROLL REVEAL ===== */
+      @keyframes orbFade {
+        0% { opacity: 0; transform: scale(0.5); }
+        100% { opacity: 1; transform: scale(1); }
+      }
+
+      /* ───────────── Neural Network ───────────── */
+      .neural-node {
+        width: 12px; height: 12px;
+        border-radius: 50%;
+        position: absolute;
+        animation: nodePulse 3s ease-in-out infinite;
+      }
+      @keyframes nodePulse {
+        0%, 100% { opacity: 0.4; transform: scale(1); box-shadow: 0 0 0 0 transparent; }
+        50% { opacity: 1; transform: scale(1.3); box-shadow: 0 0 12px 2px currentColor; }
+      }
+
+      .neural-line {
+        position: absolute;
+        height: 1.5px;
+        background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+        opacity: 0;
+        animation: lineGlow 4s ease-in-out infinite;
+      }
+      @keyframes lineGlow {
+        0%, 100% { opacity: 0.1; }
+        50% { opacity: 0.6; }
+      }
+
+      /* ───────────── IT Leader Network ───────────── */
+      .hub-node {
+        width: 60px; height: 60px;
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Fira Code', monospace;
+        font-size: 10px; font-weight: 600;
+        position: absolute;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: default;
+        z-index: 2;
+      }
+      .hub-node:hover {
+        transform: scale(1.15);
+      }
+      .hub-node.center {
+        width: 80px; height: 80px;
+        font-size: 11px;
+        background: var(--color-primary);
+        color: #fff;
+        box-shadow: 0 0 30px var(--color-primary-glow), 0 0 60px var(--color-primary-glow);
+        animation: centerPulse 3s ease-in-out infinite;
+        z-index: 3;
+      }
+      @keyframes centerPulse {
+        0%, 100% { box-shadow: 0 0 20px var(--color-primary-glow); }
+        50% { box-shadow: 0 0 40px var(--color-primary-glow), 0 0 80px var(--color-primary-glow); }
+      }
+
+      .hub-line {
+        position: absolute;
+        transform-origin: 0 0;
+        height: 2px;
+        opacity: 0.15;
+        animation: lineData 3s ease-in-out infinite;
+      }
+      @keyframes lineData {
+        0%, 100% { opacity: 0.1; }
+        50% { opacity: 0.5; }
+      }
+
+      .hub-dot {
+        width: 10px; height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        animation: dotTravel 6s linear infinite;
+      }
+      @keyframes dotTravel {
+        0% { left: 0%; opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { left: 100%; opacity: 0; }
+      }
+
+      /* ───────────── Scroll Reveal ───────────── */
       .reveal {
         opacity: 0;
         transform: translateY(40px);
-        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
       }
       .reveal.visible {
         opacity: 1;
@@ -171,1974 +254,1003 @@
       .reveal-delay-3 { transition-delay: 0.3s; }
       .reveal-delay-4 { transition-delay: 0.4s; }
 
-      /* ===== NAV ===== */
-      .nav-link {
-        position: relative;
-        color: oklch(0.4 0.005 260);
-        transition: color 0.2s ease;
-        font-size: 0.8rem;
-        letter-spacing: 0.02em;
+      /* ───────────── Marquee ───────────── */
+      .marquee-track {
+        display: flex;
+        gap: 12px;
+        animation: marqueeScroll 40s linear infinite;
+        width: max-content;
       }
-      .nav-link:hover { color: oklch(0.75 0.01 260); }
-      .nav-link::after {
-        content: '';
-        position: absolute;
-        bottom: -4px; left: 0;
-        width: 0; height: 1px;
-        background: var(--accent, #d4a04a);
-        transition: width 0.3s ease;
+      .marquee-group:hover .marquee-track {
+        animation-play-state: paused;
       }
-      .nav-link:hover::after { width: 100%; }
-
-      /* ===== HERO ===== */
-      .hero-title-line {
-        opacity: 0;
-        animation: line-reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      }
-      .hero-title-line:nth-child(1) { animation-delay: 0.15s; }
-      .hero-title-line:nth-child(2) { animation-delay: 0.35s; }
-      .hero-title-line:nth-child(3) { animation-delay: 0.55s; }
-
-      @keyframes line-reveal {
-        from { opacity: 0; transform: translateY(24px); }
-        to { opacity: 1; transform: translateY(0); }
+      @keyframes marqueeScroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
       }
 
-      .hero-badge {
-        opacity: 0;
-        animation: fade-up 0.6s ease-out 0.05s forwards;
-      }
-      .hero-cta {
-        opacity: 0;
-        animation: fade-up 0.6s ease-out 0.75s forwards;
-      }
-
-      @keyframes fade-up {
-        from { opacity: 0; transform: translateY(16px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-
-      /* ===== ACCENT LINE ===== */
-      .accent-line {
-        width: 40px;
-        height: 2px;
-        background: var(--accent, #d4a04a);
-        border-radius: 1px;
-      }
-
-      /* ===== SECTION DIVIDER ===== */
-      .section-divider {
-        height: 1px;
-        background: linear-gradient(90deg, transparent 0%, oklch(0.5 0.01 260 / 0.15) 50%, transparent 100%);
-      }
-
-      /* ===== ORBITAL ===== */
-      .orbital-container {
-        position: relative;
-        width: 100%;
-        max-width: 480px;
-        aspect-ratio: 1 / 1;
-        margin: 0 auto;
-      }
-
-      .orbital-ring {
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-      }
-      .orbital-ring-1 {
-        width: 180px; height: 180px;
-        border: 1px solid oklch(0.6 0.08 70 / 0.15);
-      }
-      .orbital-ring-2 {
-        width: 300px; height: 300px;
-        border: 1px solid oklch(0.6 0.06 280 / 0.1);
-      }
-      .orbital-ring-3 {
-        width: 420px; height: 420px;
-        border: 1px solid oklch(0.6 0.05 170 / 0.07);
-      }
-
-      .orbital-center {
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-      }
-
-       .orbital-node {
-        position: absolute;
-        width: 40px; height: 40px;
-        border-radius: 10px;
-        display: flex; align-items: center; justify-content: center;
-        font-size: 10px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
-        z-index: 10;
-        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                    box-shadow 0.3s ease;
-        cursor: default;
-      }
-      .orbital-node:hover {
-        transform: scale(1.25);
-      }
-
-      /* ===== POWER BARS ===== */
-      .power-track {
-        height: 3px;
-        border-radius: 2px;
-        background: oklch(0.25 0.005 260 / 0.4);
-        overflow: hidden;
-      }
-      .power-fill {
-        height: 100%;
-        border-radius: 2px;
-        background: linear-gradient(90deg, var(--accent, #d4a04a), oklch(0.65 0.1 280));
-        transform-origin: left;
-        transform: scaleX(0);
-        transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .power-fill.animate {
-        transform: scaleX(1);
-      }
-
-      /* ===== BENTO CARD ===== */
-      .bento-card {
-        background: var(--surface, #0e0e14);
-        border: 1px solid oklch(1 0 0 / 0.05);
-        border-radius: 16px;
-        transition: border-color 0.3s ease,
-                    background 0.3s ease,
-                    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .bento-card:hover {
-        border-color: oklch(1 0 0 / 0.1);
-        background: var(--raised, #14141c);
-      }
-
-      /* ===== AGENT CARD VARIANTS ===== */
+      /* ───────────── Card ───────────── */
       .agent-card {
-        position: relative;
-        overflow: hidden;
-        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-                    box-shadow 0.4s ease;
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        padding: 24px;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
       }
       .agent-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 40px oklch(0 0 0 / 0.3);
+        transform: translateY(-2px);
+        border-color: var(--color-primary);
+        box-shadow: 0 0 20px var(--color-primary-dim), 0 4px 20px rgba(0,0,0,0.3);
       }
 
-      /* Solid accent card */
-      .agent-card--accent {
-        background: linear-gradient(135deg, oklch(0.6 0.1 70 / 0.12), oklch(0.6 0.08 70 / 0.04));
-        border-color: oklch(0.6 0.08 70 / 0.2);
+      .stack-card {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        padding: 28px;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+      }
+      .stack-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--color-border-hover);
       }
 
-      /* Dot pattern card */
-      .agent-card--dots::before {
-        content: '';
-        position: absolute;
-        top: 12px; right: 12px;
-        width: 40px; height: 40px;
-        background-image: radial-gradient(circle, oklch(1 0 0 / 0.08) 1px, transparent 1px);
-        background-size: 8px 8px;
-        pointer-events: none;
+      /* ───────────── Terminal ───────────── */
+      .terminal {
+        background: #0d0d0d;
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .terminal-dot {
+        width: 10px; height: 10px;
+        border-radius: 50%;
       }
 
-      /* Corner accent card */
-      .agent-card--corner {
-        border-top-right-radius: 4px;
-      }
-      .agent-card--corner::after {
-        content: '';
-        position: absolute;
-        top: 0; right: 0;
-        width: 24px; height: 24px;
-        background: linear-gradient(135deg, transparent 50%, oklch(1 0 0 / 0.03) 50%);
-        pointer-events: none;
+      /* ───────────── Badge pill ───────────── */
+      .badge-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 500;
+        background: var(--color-primary-dim);
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary-glow);
+        font-family: 'Fira Code', monospace;
       }
 
-      /* ===== MCP ROW ===== */
-      .mcp-row {
-        border-bottom: 1px solid oklch(1 0 0 / 0.04);
-        transition: background 0.2s ease;
+      /* ───────────── Stat counter ───────────── */
+      .stat-number {
+        font-family: 'Manrope', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--color-text-heading);
+        line-height: 1;
       }
-      .mcp-row:first-child { border-top: 1px solid oklch(1 0 0 / 0.04); }
-      .mcp-row:hover { background: oklch(1 0 0 / 0.02); }
 
-      .status-dot {
-        width: 6px; height: 6px;
+      /* ───────────── Agent category dot ───────────── */
+      .cat-dot {
+        width: 10px; height: 10px;
         border-radius: 50%;
         display: inline-block;
         flex-shrink: 0;
       }
-      .status-active {
-        background: var(--accent, #d4a04a);
-        box-shadow: 0 0 8px oklch(0.6 0.1 70 / 0.5);
-      }
-      .status-inactive {
-        background: oklch(0.3 0.005 260 / 0.5);
+
+      /* ───────────── Reduced motion ───────────── */
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+        html { scroll-behavior: auto; }
+        .reveal { opacity: 1; transform: none; }
+        .hero-line { opacity: 1; transform: none; }
+        .marquee-track { animation: none; }
       }
 
-      /* ===== CODE BLOCK ===== */
-      .code-block {
-        background: oklch(0.08 0.002 260);
-        border: 1px solid oklch(1 0 0 / 0.04);
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      /* ===== INSTALL CTA ===== */
-      .install-cta {
-        position: relative;
-        display: inline-flex;
-        overflow: hidden;
-        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                    box-shadow 0.3s ease;
-      }
-      .install-cta::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(135deg, var(--accent, #d4a04a), oklch(0.65 0.1 280));
-      }
-      .install-cta:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 30px oklch(0.6 0.1 70 / 0.2);
-      }
-      .install-cta span {
-        position: relative;
-        z-index: 1;
-      }
-
-      /* ===== COMMAND CHIPS ===== */
-      .cmd-chip {
-        transition: all 0.2s ease;
-      }
-      .cmd-chip:hover {
-        background: oklch(0.6 0.08 70 / 0.06);
-        border-color: oklch(0.6 0.08 70 / 0.15);
-      }
-
-      /* ===== SCROLLBAR ===== */
-      ::-webkit-scrollbar { width: 5px; }
-      ::-webkit-scrollbar-track { background: transparent; }
-      ::-webkit-scrollbar-thumb { background: oklch(0.25 0.005 260 / 0.5); border-radius: 3px; }
-      ::-webkit-scrollbar-thumb:hover { background: oklch(0.35 0.005 260 / 0.6); }
-
-       /* ===== RESPONSIVE ORBITAL ===== */
-       @media (max-width: 639px) {
-        .orbital-container { max-width: 280px; }
-        .orbital-ring-1 { width: 120px; height: 120px; }
-        .orbital-ring-2 { width: 195px; height: 195px; }
-        .orbital-ring-3 { width: 270px; height: 270px; }
-        .orbital-node { width: 32px; height: 32px; font-size: 9px; border-radius: 8px; }
-        .orbital-center > div { width: 52px; height: 52px; }
-        .orbital-center > div > span:first-child { font-size: 11px; }
-        .orbital-center > div > span:last-child { font-size: 6px; }
-      }
-
-      @media (min-width: 640px) and (max-width: 1023px) {
-        .orbital-container { max-width: 380px; }
-        .orbital-ring-1 { width: 160px; height: 160px; }
-        .orbital-ring-2 { width: 260px; height: 260px; }
-        .orbital-ring-3 { width: 350px; height: 350px; }
-        .orbital-node { width: 36px; height: 36px; font-size: 10px; border-radius: 9px; }
-      }
-
-       /* ===== ORBITAL ROTATION ===== */
-       @keyframes orbital-spin {
-         from { transform: translate(-50%, -50%) rotate(0deg); }
-         to { transform: translate(-50%, -50%) rotate(360deg); }
-       }
-       @keyframes orbital-spin-reverse {
-         from { transform: translate(-50%, -50%) rotate(360deg); }
-         to { transform: translate(-50%, -50%) rotate(0deg); }
-       }
-       .orbital-ring-1 {
-         animation: orbital-spin 80s linear infinite;
-       }
-       .orbital-ring-2 {
-         animation: orbital-spin-reverse 120s linear infinite;
-       }
-       .orbital-ring-3 {
-         animation: orbital-spin 160s linear infinite;
-       }
-       /* Pause on hover for readability */
-       .orbital-container:hover .orbital-ring {
-         animation-play-state: paused;
-       }
-
-       /* ===== MARQUEE ===== */
-      @keyframes marquee {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-      }
-      .marquee-track {
-        animation: marquee 30s linear infinite;
-      }
-      .marquee-track:hover {
-        animation-play-state: paused;
-      }
-
-      /* ===== COUNTER ===== */
-      @keyframes count-pop {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.08); }
-        100% { transform: scale(1); }
-      }
-      .stat-pop {
-        animation: count-pop 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-
-      /* ===== FLOATING SHAPES ===== */
-      @keyframes float {
-        0%, 100% { transform: translateY(0) rotate(0deg); }
-        50% { transform: translateY(-20px) rotate(3deg); }
-      }
-      .float-slow { animation: float 8s ease-in-out infinite; }
-      .float-medium { animation: float 6s ease-in-out infinite 1s; }
-      .float-fast { animation: float 5s ease-in-out infinite 2s; }
-
-      /* ===== HORIZONTAL RULE ACCENT ===== */
-      .hr-accent {
-        position: relative;
-        height: 1px;
-        background: oklch(1 0 0 / 0.04);
-      }
-      .hr-accent::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: -1px;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 3px;
-        background: linear-gradient(90deg, transparent, var(--accent, #d4a04a), transparent);
-        border-radius: 2px;
-      }
-
-      /* ===== HERO CREATIVE ELEMENTS ===== */
-      @keyframes beam-sweep {
-        0%, 100% { transform: translateX(-100%) rotate(15deg); }
-        50% { transform: translateX(200%) rotate(15deg); }
-      }
-      .hero-beam {
-        position: absolute;
-        width: 200px;
-        height: 1px;
-        background: linear-gradient(90deg, transparent, var(--accent, #d4a04a), transparent);
-        opacity: 0.15;
-        animation: beam-sweep 8s ease-in-out infinite;
-      }
-      .hero-beam-1 { top: 20%; left: -100px; animation-delay: 0s; }
-      .hero-beam-2 { top: 60%; left: -100px; animation-delay: 3s; }
-      .hero-beam-3 { top: 80%; left: -100px; animation-delay: 5s; }
-
-      @keyframes cross-rotate {
-        0%, 100% { transform: rotate(0deg) scale(1); }
-        50% { transform: rotate(180deg) scale(1.1); }
-      }
-      .hero-cross {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        opacity: 0.1;
-        animation: cross-rotate 20s linear infinite;
-      }
-      .hero-cross::before,
-      .hero-cross::after {
-        content: '';
-        position: absolute;
-        background: var(--accent, #d4a04a);
-      }
-      .hero-cross::before {
-        top: 50%; left: 0;
-        width: 100%; height: 1px;
-        transform: translateY(-50%);
-      }
-      .hero-cross::after {
-        top: 0; left: 50%;
-        width: 1px; height: 100%;
-        transform: translateX(-50%);
-      }
-      .hero-cross-1 { top: 15%; right: 15%; animation-duration: 25s; }
-      .hero-cross-2 { bottom: 25%; right: 25%; animation-duration: 30s; animation-direction: reverse; }
-      .hero-cross-3 { top: 45%; right: 5%; animation-duration: 20s; }
-
-      @keyframes square-float {
-        0%, 100% { transform: translateY(0) rotate(0deg); }
-        33% { transform: translateY(-15px) rotate(120deg); }
-        66% { transform: translateY(10px) rotate(240deg); }
-      }
-      .hero-square {
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        border: 1px solid oklch(1 0 0 / 0.08);
-        animation: square-float 12s ease-in-out infinite;
-      }
-      .hero-square-1 { top: 25%; right: 20%; animation-delay: 0s; }
-      .hero-square-2 { bottom: 35%; right: 10%; animation-delay: 4s; width: 8px; height: 8px; }
-      .hero-square-3 { top: 60%; right: 30%; animation-delay: 8s; width: 16px; height: 16px; }
-
-      /* Terminal preview */
-      .terminal-preview {
-        background: oklch(0.06 0.002 260);
-        border: 1px solid oklch(1 0 0 / 0.06);
-        border-radius: 12px;
-        overflow: hidden;
-        backdrop-filter: blur(10px);
-      }
-      .terminal-header {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        padding: 10px 14px;
-        background: oklch(1 0 0 / 0.02);
-        border-bottom: 1px solid oklch(1 0 0 / 0.04);
-      }
-      .terminal-dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-      }
-      .terminal-body {
-        padding: 14px;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 11px;
-        line-height: 1.8;
-        color: oklch(0.5 0.01 260);
-      }
-      .terminal-line {
-        opacity: 0;
-        animation: terminal-type 0.3s ease-out forwards;
-      }
-      .terminal-line:nth-child(1) { animation-delay: 1s; }
-      .terminal-line:nth-child(2) { animation-delay: 1.8s; }
-      .terminal-line:nth-child(3) { animation-delay: 2.6s; }
-      .terminal-line:nth-child(4) { animation-delay: 3.4s; }
-      .terminal-line:nth-child(5) { animation-delay: 4.2s; }
-      .terminal-line:nth-child(6) { animation-delay: 5s; }
-
-      @keyframes terminal-type {
-        from { opacity: 0; transform: translateX(-8px); }
-        to { opacity: 1; transform: translateX(0); }
-      }
-
-      .terminal-prompt { color: var(--accent, #d4a04a); }
-      .terminal-success { color: oklch(0.65 0.15 145); }
-      .terminal-info { color: oklch(0.6 0.1 200); }
-      .terminal-dim { color: oklch(0.35 0.005 260); }
-
-      /* Title underline accent */
-      .title-underline {
-        display: block;
-        width: 80px;
-        height: 3px;
-        background: linear-gradient(90deg, var(--accent, #d4a04a), transparent);
-        border-radius: 2px;
-        margin-top: 16px;
-        opacity: 0;
-        animation: line-expand 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
-      }
-      @keyframes line-expand {
-        from { opacity: 0; width: 0; }
-        to { opacity: 1; width: 80px; }
-      }
-
-      /* Agent badges */
-      .agent-badge {
-        opacity: 0;
-        animation: badge-fade-in 0.5s ease-out forwards;
-      }
-      .agent-badge:nth-child(1) { animation-delay: 2s; }
-      .agent-badge:nth-child(2) { animation-delay: 2.5s; }
-      .agent-badge:nth-child(3) { animation-delay: 3s; }
-
-      @keyframes badge-fade-in {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
+      /* ───────────── Responsive ───────────── */
+      @media (max-width: 768px) {
+        .stat-number { font-size: 1.75rem; }
+        .hub-node { width: 40px; height: 40px; font-size: 8px; }
+        .hub-node.center { width: 56px; height: 56px; font-size: 9px; }
       }
     </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['Manrope', 'system-ui', 'sans-serif'],
+              body: ['Rubik', 'system-ui', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            colors: {
+              bg: 'var(--color-bg)',
+              'bg-alt': 'var(--color-bg-alt)',
+              surface: 'var(--color-surface)',
+              raised: 'var(--color-raised)',
+              primary: 'var(--color-primary)',
+              'primary-hover': 'var(--color-primary-hover)',
+              'primary-dim': 'var(--color-primary-dim)',
+              'primary-glow': 'var(--color-primary-glow)',
+              secondary: 'var(--color-secondary)',
+              'secondary-dim': 'var(--color-secondary-dim)',
+              tertiary: 'var(--color-tertiary)',
+              text: 'var(--color-text)',
+              'text-heading': 'var(--color-text-heading)',
+              'text-muted': 'var(--color-text-muted)',
+              border: 'var(--color-border)',
+              'border-hover': 'var(--color-border-hover)',
+              success: 'var(--color-success)',
+              warning: 'var(--color-warning)',
+              error: 'var(--color-error)',
+            },
+          },
+        },
+      }
+    </script>
   </head>
   <body>
 
-    <!-- ===== BACKGROUND LAYERS ===== -->
-    <div class="noise-overlay"></div>
-    <div class="ambient ambient-1"></div>
-    <div class="ambient ambient-2"></div>
-    <div class="ambient ambient-3"></div>
+    <!-- ════════════════════════════════════════════
+    NAV
+    ════════════════════════════════════════════ -->
+    <nav class="fixed top-0 left-0 right-0 z-50" style="background: oklch(0.04 0.015 260 / 0.85); backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-border);">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3 no-underline">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 6px; background: var(--color-primary); color: #fff; font-family: Manrope, sans-serif; font-weight: 700; font-size: 15px;">K</span>
+          <span class="hidden sm:inline font-display font-semibold text-sm" style="color: var(--color-text-heading);">Copilot Agent KIT</span>
+        </a>
 
-    <!-- ===== NAV ===== -->
-    <nav
-      class="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.03] bg-[#08080c]/85 backdrop-blur-xl">
-      <div
-        class="max-w-6xl mx-auto px-6 lg:px-8 h-14 flex items-center justify-between">
-        <div class="flex items-center gap-2.5">
-          <span
-            class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-accent text-black text-xs font-bold font-mono shadow-lg shadow-accent/20">K</span>
-          <span
-            class="text-sm font-medium text-white/60 tracking-tight">Copilot
-            Agent KIT</span>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#leader" class="text-xs font-medium no-underline transition-opacity" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">IT Leader</a>
+          <a href="#agents" class="text-xs font-medium no-underline transition-opacity" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">Agents</a>
+          <a href="#capabilities" class="text-xs font-medium no-underline transition-opacity" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">Capabilities</a>
+          <a href="#install" class="text-xs font-medium no-underline transition-opacity" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">Install</a>
         </div>
-        <div class="flex items-center gap-5">
-          <a href="#leader" class="nav-link hidden sm:block">IT Leader</a>
-          <a href="#agents" class="nav-link hidden sm:block">Agents</a>
-          <a href="#capabilities"
-            class="nav-link hidden sm:block">Capabilities</a>
-          <a href="#install" class="nav-link hidden sm:block">Install</a>
-          <a href="https://github.com/defuj/copilot-agent-kit"
-            target="_blank" rel="noopener"
-            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-white/50 hover:text-white/70 transition-all text-xs border border-white/[0.04]">
-            <svg class="w-3.5 h-3.5" fill="currentColor"
-              viewBox="0 0 24 24"><path
-                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>
-            <span class="hidden sm:inline">GitHub</span>
-          </a>
-        </div>
+
+        <a href="https://github.com/defuj/copilot-agent-kit" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-lg no-underline transition-colors" style="color: var(--color-text-muted); border: 1px solid var(--color-border);" onmouseover="this.style.borderColor='var(--color-primary)'; this.style.color='var(--color-primary)'" onmouseout="this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text-muted)'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
       </div>
     </nav>
 
-    <!-- ===== HERO ===== -->
-    <section
-      class="relative min-h-screen flex flex-col justify-center pt-14 overflow-hidden">
-      <div
-        class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 py-24 lg:py-0 w-full">
+    <!-- ════════════════════════════════════════════
+    HERO
+    ════════════════════════════════════════════ -->
+    <section class="relative min-h-screen flex items-center overflow-hidden" style="background: var(--color-bg);">
+      <!-- Ambient orbs -->
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
 
-        <!-- Creative background elements -->
-        <div class="hero-beam hero-beam-1 hidden lg:block"></div>
-        <div class="hero-beam hero-beam-2 hidden lg:block"></div>
-        <div class="hero-beam hero-beam-3 hidden lg:block"></div>
-        <div class="hero-cross hero-cross-1 hidden lg:block"></div>
-        <div class="hero-cross hero-cross-2 hidden lg:block"></div>
-        <div class="hero-cross hero-cross-3 hidden lg:block"></div>
-        <div class="hero-square hero-square-1 hidden lg:block"></div>
-        <div class="hero-square hero-square-2 hidden lg:block"></div>
-        <div class="hero-square hero-square-3 hidden lg:block"></div>
-
-        <!-- Two-column layout -->
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-          <!-- LEFT: Content -->
-          <div class="relative">
-            <div
-              class="absolute -top-20 -left-10 w-64 h-64 bg-accent/[0.04] blur-[120px] rounded-full pointer-events-none"></div>
-
-            <div
-              class="hero-badge inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-accent/8 border border-accent/20 text-accent/85 text-xs font-mono mb-8 tracking-tight">
-              <span
-                class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse shadow-[0_0_6px_rgba(212,160,74,0.6)]"></span>
-              v1.0.0 &mdash; 13 agents &middot; 62 skills &middot; 36 commands
-            </div>
-
-            <h1
-              class="relative text-4xl sm:text-[3.5rem] lg:text-[4.5rem] xl:text-[5rem] font-bold leading-[0.92] tracking-tight mb-6">
-              <span
-                class="hero-title-line block text-white/45 font-normal text-2xl sm:text-3xl lg:text-4xl">Multi-Stack
-                AI</span>
-              <span class="hero-title-line block">Agent Orchestrator</span>
-              <span class="hero-title-line block">
-                <span class="text-white/45 font-normal">for </span>
-                <span class="text-accent">GitHub Copilot</span>
-              </span>
-              <span class="title-underline"></span>
-            </h1>
-
-            <p
-              class="text-sm sm:text-base text-white/35 leading-relaxed mb-10 max-w-md">
-              An <strong class="text-white/60 font-medium">IT-Leader</strong>
-              that plans, delegates to <strong
-                class="text-white/60 font-medium">12 specialized
-                subagents</strong>, and integrates results. One command installs
-              an entire AI development team.
-            </p>
-
-            <div class="hero-cta flex flex-wrap gap-3 mb-12">
-              <a href="#install"
-                class="install-cta rounded-xl px-6 py-3 text-sm font-bold font-mono text-black tracking-tight">
-                <span>npx copilot-agent-kit init</span>
-              </a>
-              <a href="#leader"
-                class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/[0.03] text-white/55 text-sm font-medium hover:bg-white/[0.06] hover:text-white/75 transition-all border border-white/[0.06] hover:border-accent/15">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24"><path stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                See how it works
-              </a>
-            </div>
-
-            <!-- Stats row (compact) -->
-            <div class="stats-row grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <div
-                class="stat-card stat-featured group relative overflow-hidden rounded-2xl p-4 sm:p-5 border border-accent/20 bg-accent/[0.03] hover:bg-accent/[0.06] transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5">
-                <div
-                  class="absolute -right-4 -top-4 w-20 h-20 bg-accent/5 rounded-full blur-2xl group-hover:bg-accent/10 transition-colors"></div>
-                <div class="relative">
-                  <div class="flex items-baseline gap-1 mb-1">
-                    <span
-                      class="text-3xl sm:text-4xl font-black text-accent font-display stat-number"
-                      data-count="13">0</span>
-                    <span class="text-xs text-accent/50 font-mono">+</span>
-                  </div>
-                  <div
-                    class="text-[10px] text-white/30 uppercase tracking-[0.15em] font-medium">Agents</div>
-                </div>
-              </div>
-              <div
-                class="stat-card group relative overflow-hidden rounded-2xl p-4 sm:p-5 border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] transition-all hover:border-white/[0.08]">
-                <div class="relative">
-                  <div class="flex items-baseline gap-1 mb-1">
-                    <span
-                      class="text-3xl sm:text-4xl font-black text-white/80 font-display stat-number"
-                      data-count="62">0</span>
-                    <span class="text-xs text-white/20 font-mono">+</span>
-                  </div>
-                  <div
-                    class="text-[10px] text-white/25 uppercase tracking-[0.15em] font-medium">Skills</div>
-                </div>
-              </div>
-              <div
-                class="stat-card group relative overflow-hidden rounded-2xl p-4 sm:p-5 border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] transition-all hover:border-white/[0.08]">
-                <div class="relative">
-                  <div class="flex items-baseline gap-1 mb-1">
-                    <span
-                      class="text-3xl sm:text-4xl font-black text-white/80 font-display stat-number"
-                      data-count="36">0</span>
-                    <span class="text-xs text-white/20 font-mono">+</span>
-                  </div>
-                  <div
-                    class="text-[10px] text-white/25 uppercase tracking-[0.15em] font-medium">Commands</div>
-                </div>
-              </div>
-              <div
-                class="stat-card group relative overflow-hidden rounded-2xl p-4 sm:p-5 border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] transition-all hover:border-white/[0.08]">
-                <div class="relative">
-                  <div class="flex items-baseline gap-1 mb-1">
-                    <span
-                      class="text-3xl sm:text-4xl font-black text-white/80 font-display stat-number"
-                      data-count="6">0</span>
-                  </div>
-                  <div
-                    class="text-[10px] text-white/25 uppercase tracking-[0.15em] font-medium">MCP</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT: Terminal + Visual -->
-          <div class="relative hidden lg:block">
-            <!-- Ambient glow behind terminal -->
-            <div
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent/[0.03] blur-[100px] rounded-full pointer-events-none"></div>
-
-            <!-- Terminal Preview -->
-            <div class="terminal-preview relative">
-              <div class="terminal-header">
-                <span class="terminal-dot bg-red-400/60"></span>
-                <span class="terminal-dot bg-yellow-400/60"></span>
-                <span class="terminal-dot bg-green-400/60"></span>
-                <span
-                  class="terminal-dim text-[10px] font-mono ml-2">copilot-agent-kit
-                  — installation</span>
-              </div>
-              <div class="terminal-body">
-                <div class="terminal-line"><span
-                    class="terminal-prompt">$</span> npx copilot-agent-kit
-                  init</div>
-                <div class="terminal-line"><span class="terminal-dim">⠋
-                    Resolving agent configurations...</span></div>
-                <div class="terminal-line"><span
-                    class="terminal-success">✓</span> <span
-                    class="terminal-info">IT Leader</span> <span
-                    class="terminal-dim">orchestrator ready</span></div>
-                <div class="terminal-line"><span
-                    class="terminal-success">✓</span> <span
-                    class="terminal-info">12 subagents</span> <span
-                    class="terminal-dim">loaded</span></div>
-                <div class="terminal-line"><span
-                    class="terminal-success">✓</span> <span
-                    class="terminal-info">62 skills</span> <span
-                    class="terminal-dim">+ 36 commands</span></div>
-                <div class="terminal-line"><span
-                    class="terminal-prompt">▶</span> <span
-                    class="terminal-success">AI team ready. What shall we
-                    build?</span></div>
-              </div>
-            </div>
-
-            <!-- Floating agent badges around terminal -->
-            <div class="absolute -top-6 -right-6 agent-badge float-slow">
-              <div
-                class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06] backdrop-blur-sm">
-                <span class="w-2 h-2 rounded-full bg-emerald-400/60"></span>
-                <span
-                  class="text-[10px] text-white/40 font-mono">frontend-nuxt</span>
-              </div>
-            </div>
-            <div class="absolute -bottom-4 -left-6 agent-badge float-medium">
-              <div
-                class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06] backdrop-blur-sm">
-                <span class="w-2 h-2 rounded-full bg-blue-400/60"></span>
-                <span class="text-[10px] text-white/40 font-mono">backend</span>
-              </div>
-            </div>
-            <div class="absolute top-1/2 -right-8 agent-badge float-fast">
-              <div
-                class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06] backdrop-blur-sm">
-                <span class="w-2 h-2 rounded-full bg-purple-400/60"></span>
-                <span
-                  class="text-[10px] text-white/40 font-mono">designer</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Neural network background decoration -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none" style="opacity: 0.2;">
+        <svg class="w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="ng1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--color-primary)" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </linearGradient>
+            <linearGradient id="ng2" x1="1" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="var(--color-secondary)" stop-opacity="0.2"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </linearGradient>
+          </defs>
+          <!-- Neural lines -->
+          <line x1="100" y1="200" x2="300" y2="400" stroke="var(--color-primary)" stroke-width="0.5" opacity="0.3">
+            <animate attributeName="opacity" values="0.1;0.4;0.1" dur="4s" repeatCount="indefinite"/>
+          </line>
+          <line x1="300" y1="400" x2="600" y2="150" stroke="var(--color-secondary)" stroke-width="0.5" opacity="0.2">
+            <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite"/>
+          </line>
+          <line x1="600" y1="150" x2="900" y2="300" stroke="var(--color-primary)" stroke-width="0.5" opacity="0.2">
+            <animate attributeName="opacity" values="0.05;0.3;0.05" dur="5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="900" y1="300" x2="1100" y2="100" stroke="var(--color-tertiary)" stroke-width="0.5" opacity="0.2">
+            <animate attributeName="opacity" values="0.1;0.35;0.1" dur="3.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="200" y1="600" x2="500" y2="500" stroke="var(--color-secondary)" stroke-width="0.5" opacity="0.2">
+            <animate attributeName="opacity" values="0.05;0.3;0.05" dur="4.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="500" y1="500" x2="800" y2="650" stroke="var(--color-primary)" stroke-width="0.5" opacity="0.25">
+            <animate attributeName="opacity" values="0.1;0.35;0.1" dur="3.8s" repeatCount="indefinite"/>
+          </line>
+          <circle cx="100" cy="200" r="4" fill="var(--color-primary)" opacity="0.6">
+            <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="300" cy="400" r="3" fill="var(--color-secondary)" opacity="0.5">
+            <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="600" cy="150" r="4" fill="var(--color-primary)" opacity="0.6">
+            <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="900" cy="300" r="3" fill="var(--color-tertiary)" opacity="0.5">
+            <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4.2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="1100" cy="100" r="4" fill="var(--color-tertiary)" opacity="0.5">
+            <animate attributeName="r" values="3;6;3" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="200" cy="600" r="3" fill="var(--color-secondary)" opacity="0.4"/>
+          <circle cx="500" cy="500" r="5" fill="var(--color-primary)" opacity="0.5">
+            <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.8s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="800" cy="650" r="3" fill="var(--color-primary)" opacity="0.4"/>
+        </svg>
       </div>
-    </section>
 
-    <div class="hr-accent max-w-6xl mx-auto"></div>
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-6 py-24 md:py-32">
+        <div class="max-w-3xl">
+          <!-- Badge -->
+          <div class="hero-line badge-pill mb-8">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--color-success); display: inline-block;"></span>
+            v1.0.0 &middot; 13 agents &middot; 62 skills &middot; 36 commands &middot; 6 MCP
+          </div>
 
-    <!-- ===== IT-LEADER SPOTLIGHT ===== -->
-    <section id="leader" class="relative py-20 lg:py-32">
-      <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
+          <!-- Headline -->
+          <h1 class="hero-line font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6" style="color: var(--color-text-heading);">
+            13 Specialized Agents.
+          </h1>
+          <h1 class="hero-line font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6" style="color: var(--color-text-heading);">
+            One Portable Toolkit.
+          </h1>
+          <h1 class="hero-line font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-8" style="color: var(--color-primary);">
+            Your Copilot.
+          </h1>
 
-        <div class="reveal text-center max-w-2xl mx-auto mb-16">
-          <div class="accent-line mx-auto mb-8"></div>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Meet the <span class="text-accent">IT Leader</span>
-          </h2>
-          <p class="text-white/30 text-sm sm:text-base leading-relaxed">
-            The IT-Leader never writes code. It analyzes requirements, designs
-            architecture, decomposes tasks, delegates to specialized subagents,
-            and integrates the results.
+          <!-- Subtext -->
+          <p class="hero-line text-base sm:text-lg max-w-xl mb-10 leading-relaxed" style="color: var(--color-text-muted);">
+            A portable multi-stack agent system for GitHub Copilot. Drop 13 specialized AI agents, 62 skills, and 36 commands into any project out of the box. Works across frontend, backend, mobile, and DevOps.
           </p>
-        </div>
 
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-          <!-- Orbital Visualization -->
-          <div class="reveal">
-            <div class="orbital-container">
-              <div class="orbital-ring orbital-ring-1"></div>
-              <div class="orbital-ring orbital-ring-2"></div>
-              <div class="orbital-ring orbital-ring-3"></div>
-
-              <div class="orbital-center">
-                <div
-                  class="w-16 h-16 rounded-2xl bg-accent flex flex-col items-center justify-center shadow-2xl shadow-accent/25">
-                  <span class="text-black text-sm font-bold font-mono">TL</span>
-                  <span
-                    class="text-black/50 text-[7px] font-mono uppercase tracking-widest">Leader</span>
-                </div>
-              </div>
-
-              <!-- Ring 1: Core Dev -->
-              <div class="orbital-node"
-                style="top: 3%; left: 50%; transform: translateX(-50%); background: oklch(0.6 0.12 230 / 0.12); color: oklch(0.75 0.1 230); border: 1px solid oklch(0.6 0.12 230 / 0.2);">NU</div>
-              <div class="orbital-node"
-                style="top: 18%; right: 5%; background: oklch(0.65 0.12 190 / 0.12); color: oklch(0.75 0.1 190); border: 1px solid oklch(0.65 0.12 190 / 0.2);">RE</div>
-              <div class="orbital-node"
-                style="bottom: 18%; right: 5%; background: oklch(0.6 0.12 160 / 0.12); color: oklch(0.75 0.1 160); border: 1px solid oklch(0.6 0.12 160 / 0.2);">ND</div>
-              <div class="orbital-node"
-                style="bottom: 3%; left: 50%; transform: translateX(-50%); background: oklch(0.65 0.15 35 / 0.12); color: oklch(0.75 0.12 35); border: 1px solid oklch(0.65 0.15 35 / 0.2);">LA</div>
-
-              <!-- Ring 2: Supporting -->
-              <div class="orbital-node"
-                style="top: 8%; left: 10%; background: oklch(0.65 0.12 100 / 0.12); color: oklch(0.75 0.1 100); border: 1px solid oklch(0.65 0.12 100 / 0.2);">CI</div>
-              <div class="orbital-node"
-                style="top: 35%; left: 0; background: oklch(0.7 0.14 80 / 0.12); color: oklch(0.75 0.12 80); border: 1px solid oklch(0.7 0.14 80 / 0.2);">DE</div>
-              <div class="orbital-node"
-                style="bottom: 35%; left: 0; background: oklch(0.6 0.15 25 / 0.12); color: oklch(0.75 0.12 25); border: 1px solid oklch(0.6 0.15 25 / 0.2);">RV</div>
-              <div class="orbital-node"
-                style="bottom: 8%; left: 10%; background: oklch(0.6 0.14 145 / 0.12); color: oklch(0.75 0.12 145); border: 1px solid oklch(0.6 0.14 145 / 0.2);">AN</div>
-
-              <!-- Ring 3: Specialists -->
-              <div class="orbital-node"
-                style="top: 0; left: 28%; background: oklch(0.65 0.12 190 / 0.12); color: oklch(0.75 0.1 190); border: 1px solid oklch(0.65 0.12 190 / 0.2);">DB</div>
-              <div class="orbital-node"
-                style="top: 28%; right: 0; background: oklch(0.6 0.1 270 / 0.12); color: oklch(0.75 0.08 270); border: 1px solid oklch(0.6 0.1 270 / 0.2);">DV</div>
-              <div class="orbital-node"
-                style="bottom: 28%; right: 0; background: oklch(0.65 0.12 100 / 0.12); color: oklch(0.75 0.1 100); border: 1px solid oklch(0.65 0.12 100 / 0.2);">SE</div>
-              <div class="orbital-node"
-                style="bottom: 0; left: 28%; background: oklch(0.65 0.12 210 / 0.12); color: oklch(0.75 0.1 210); border: 1px solid oklch(0.65 0.12 210 / 0.2);">FL</div>
-            </div>
-          </div>
-
-          <!-- Powers -->
-          <div class="space-y-5">
-            <div class="reveal">
-              <h3 class="text-lg font-semibold mb-1">Core Identity</h3>
-              <p class="text-white/25 text-sm">Senior IT Leader &middot;
-                Technical Project Manager &middot; Solution Architect</p>
-            </div>
-
-            <div class="reveal reveal-delay-1 space-y-4">
-              <div class="bento-card p-4">
-                <div class="flex items-center justify-between mb-2">
-                  <div class="flex items-center gap-2.5">
-                    <svg class="w-4 h-4 text-accent" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24"><path
-                        stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                    <span class="text-sm font-medium">Requirements
-                      Analysis</span>
-                  </div>
-                  <span class="text-accent/50 text-xs font-mono">100%</span>
-                </div>
-                <div class="power-track"><div class="power-fill"
-                    data-width="100%" style="width: 100%"></div></div>
-              </div>
-
-              <div class="bento-card p-4">
-                <div class="flex items-center justify-between mb-2">
-                  <div class="flex items-center gap-2.5">
-                    <svg class="w-4 h-4 text-accent" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24"><path
-                        stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
-                    <span class="text-sm font-medium">Architecture Design</span>
-                  </div>
-                  <span class="text-accent/50 text-xs font-mono">100%</span>
-                </div>
-                <div class="power-track"><div class="power-fill"
-                    data-width="100%" style="width: 100%"></div></div>
-              </div>
-
-              <div class="bento-card p-4">
-                <div class="flex items-center justify-between mb-2">
-                  <div class="flex items-center gap-2.5">
-                    <svg class="w-4 h-4 text-accent" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24"><path
-                        stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-                    <span class="text-sm font-medium">Task Decomposition</span>
-                  </div>
-                  <span class="text-accent/50 text-xs font-mono">100%</span>
-                </div>
-                <div class="power-track"><div class="power-fill"
-                    data-width="100%" style="width: 100%"></div></div>
-              </div>
-
-              <div class="bento-card p-4">
-                <div class="flex items-center justify-between mb-2">
-                  <div class="flex items-center gap-2.5">
-                    <svg class="w-4 h-4 text-accent" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24"><path
-                        stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                    <span class="text-sm font-medium">Mandatory
-                      Delegation</span>
-                  </div>
-                  <span class="text-accent/50 text-xs font-mono">100%</span>
-                </div>
-                <div class="power-track"><div class="power-fill"
-                    data-width="100%" style="width: 100%"></div></div>
-              </div>
-
-              <div class="bento-card p-4">
-                <div class="flex items-center justify-between mb-2">
-                  <div class="flex items-center gap-2.5">
-                    <svg class="w-4 h-4 text-accent" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24"><path
-                        stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-                    <span class="text-sm font-medium">Integration &amp;
-                      Unification</span>
-                  </div>
-                  <span class="text-accent/50 text-xs font-mono">100%</span>
-                </div>
-                <div class="power-track"><div class="power-fill"
-                    data-width="100%" style="width: 100%"></div></div>
-              </div>
-            </div>
-
-            <div class="reveal reveal-delay-2 bento-card p-5 border-accent/10">
-              <div class="flex items-start gap-3">
-                <span
-                  class="text-accent text-lg leading-none mt-0.5">&#9889;</span>
-                <div>
-                  <p class="text-white/60 text-sm font-medium mb-1">Golden
-                    Rule</p>
-                  <p class="text-white/25 text-xs leading-relaxed">The IT-Leader
-                    <strong class="text-white/45">never writes code</strong>. It
-                    plans, delegates, and integrates. Every code change goes
-                    through specialized subagents.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="hr-accent max-w-6xl mx-auto"></div>
-
-    <!-- ===== MARQUEE ===== -->
-    <section
-      class="relative py-6 overflow-hidden border-y border-white/[0.03] bg-white/[0.01]">
-      <div class="relative z-10 flex whitespace-nowrap">
-        <div class="marquee-track flex items-center gap-6">
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-400/60"></span>Nuxt
-            Frontend
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400/60"></span>React
-            Frontend
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400/60"></span>Node
-            Backend
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-orange-400/60"></span>Laravel
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-lime-400/60"></span>CodeIgniter
-            3
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-green-400/60"></span>Android
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-sky-400/60"></span>Flutter
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-400/60"></span>UI/UX
-            Design
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-red-400/60"></span>Code
-            Review
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-cyan-400/60"></span>Database
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-indigo-400/60"></span>DevOps
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-lime-400/60"></span>SEO
-          </span>
-          <!-- Duplicate for seamless loop -->
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-400/60"></span>Nuxt
-            Frontend
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400/60"></span>React
-            Frontend
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400/60"></span>Node
-            Backend
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-orange-400/60"></span>Laravel
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-lime-400/60"></span>CodeIgniter
-            3
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-green-400/60"></span>Android
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-sky-400/60"></span>Flutter
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-400/60"></span>UI/UX
-            Design
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-red-400/60"></span>Code
-            Review
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-cyan-400/60"></span>Database
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span
-              class="w-1.5 h-1.5 rounded-full bg-indigo-400/60"></span>DevOps
-          </span>
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-white/50 text-xs font-mono tracking-tight">
-            <span class="w-1.5 h-1.5 rounded-full bg-lime-400/60"></span>SEO
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== AGENT TEAM ===== -->
-    <section id="agents" class="relative py-20 lg:py-32">
-      <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
-
-        <div class="reveal text-center max-w-2xl mx-auto mb-14">
-          <div class="accent-line mx-auto mb-8"></div>
-          <h2 class="text-3xl sm:text-4xl font-bold mb-4">13 Agents, One
-            Mission</h2>
-          <p class="text-white/25 text-sm sm:text-base leading-relaxed">
-            Each agent is a specialist. The IT Leader orchestrates them all
-            &mdash; breaking down requirements, delegating work, and integrating
-            results.
-          </p>
-        </div>
-
-        <!-- Leader Card (featured, wide) -->
-        <div class="reveal mb-6">
-          <div
-            class="bento-card p-6 lg:p-8 border-accent/10 relative overflow-hidden">
-            <div
-              class="absolute top-0 right-0 w-64 h-64 bg-accent/[0.02] rounded-full -translate-y-32 translate-x-32 blur-3xl pointer-events-none"></div>
-            <div
-              class="relative flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <div
-                class="w-14 h-14 rounded-2xl bg-accent flex items-center justify-center shadow-lg shadow-accent/20 shrink-0">
-                <span class="text-black text-sm font-bold font-mono">TL</span>
-              </div>
-              <div class="flex-1 min-w-0">
-                <div class="flex items-center gap-2 flex-wrap">
-                  <span class="font-semibold text-lg">IT Leader</span>
-                  <span
-                    class="px-2 py-0.5 rounded text-[10px] font-mono bg-accent/10 text-accent border border-accent/15">PRIMARY</span>
-                  <code class="text-xs text-white/20 font-mono">@leader</code>
-                </div>
-                <p class="text-white/25 text-sm mt-1">Orchestration &middot;
-                  Planning &middot; Architecture &middot; Integration &middot;
-                  Quality Gates</p>
-              </div>
-              <div
-                class="flex items-center gap-2 text-xs text-white/20 font-mono">
-                <span class="status-dot status-active"></span>
-                Always Active
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bento Grid for subagents -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-
-          <!-- @frontend-nuxt -->
-          <div class="reveal agent-card bento-card p-5 agent-card--dots">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 border border-blue-500/15">
-                <span
-                  class="text-blue-400 text-[11px] font-bold font-mono">NU</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="font-medium text-sm">Nuxt Frontend</span>
-                </div>
-                <p class="text-white/20 text-xs leading-relaxed">Vue 3 &middot;
-                  Nuxt 4 &middot; Nuxt UI &middot; TypeScript &middot;
-                  Playwright</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-blue-500/10 text-blue-400">Nuxt
-                    4</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@frontend-nuxt</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @frontend-react -->
-          <div
-            class="reveal reveal-delay-1 agent-card bento-card p-5 agent-card--corner">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0 border border-cyan-500/15">
-                <span
-                  class="text-cyan-400 text-[11px] font-bold font-mono">RE</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">React Frontend</div>
-                <p class="text-white/20 text-xs leading-relaxed">React 19
-                  &middot; Next.js 15 &middot; shadcn/ui &middot; TanStack
-                  Query</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-cyan-500/10 text-cyan-400">React
-                    19</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@frontend-react</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @backend -->
-          <div
-            class="reveal reveal-delay-2 agent-card bento-card p-5 agent-card--dots">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/15">
-                <span
-                  class="text-emerald-400 text-[11px] font-bold font-mono">ND</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">Node Backend</div>
-                <p class="text-white/20 text-xs leading-relaxed">Express 5
-                  &middot; Prisma &middot; PostgreSQL &middot; DTO &middot;
-                  JWT</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400">Express
-                    5</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@backend</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @laravel -->
-          <div class="reveal agent-card bento-card p-5 agent-card--corner">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center shrink-0 border border-orange-500/15">
-                <span
-                  class="text-orange-400 text-[11px] font-bold font-mono">LA</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">Laravel Backend</div>
-                <p class="text-white/20 text-xs leading-relaxed">Laravel 10+
-                  &middot; Service/Repository &middot; Eloquent &middot; JWT</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-orange-500/10 text-orange-400">Laravel</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@laravel</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @ci3 -->
-          <div
-            class="reveal reveal-delay-1 agent-card bento-card p-5 agent-card--dots">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-lime-500/10 flex items-center justify-center shrink-0 border border-lime-500/15">
-                <span
-                  class="text-lime-400 text-[11px] font-bold font-mono">CI</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">CodeIgniter 3</div>
-                <p class="text-white/20 text-xs leading-relaxed">CI3 MVC
-                  &middot; REST API &middot; JWT &middot; MySQL/PostgreSQL</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-lime-500/10 text-lime-400">CI3</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@ci3</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @designer -->
-          <div
-            class="reveal reveal-delay-2 agent-card bento-card p-5 agent-card--accent">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center shrink-0 border border-amber-500/15">
-                <span
-                  class="text-amber-400 text-[11px] font-bold font-mono">DE</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">UI/UX Designer</div>
-                <p class="text-white/20 text-xs leading-relaxed">Impeccable
-                  design &middot; Figma &middot; Stitch &middot; WCAG 2.1</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-amber-500/10 text-amber-400">Design</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@designer</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @reviewer -->
-          <div class="reveal agent-card bento-card p-5 agent-card--corner">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center shrink-0 border border-red-500/15">
-                <span
-                  class="text-red-400 text-[11px] font-bold font-mono">RV</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">Code Reviewer / QA</div>
-                <p class="text-white/20 text-xs leading-relaxed">Quality audit
-                  &middot; Security &middot; Testing strategy &middot; E2E</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-red-500/10 text-red-400">QA</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@reviewer</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @database -->
-          <div
-            class="reveal reveal-delay-1 agent-card bento-card p-5 agent-card--dots">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0 border border-cyan-500/15">
-                <span
-                  class="text-cyan-400 text-[11px] font-bold font-mono">DB</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">Database Specialist</div>
-                <p class="text-white/20 text-xs leading-relaxed">PostgreSQL
-                  &middot; Prisma &middot; Migrations &middot; Query
-                  optimization</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-cyan-500/10 text-cyan-400">SQL</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@database</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @devops -->
-          <div
-            class="reveal reveal-delay-2 agent-card bento-card p-5 agent-card--corner">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 border border-indigo-500/15">
-                <span
-                  class="text-indigo-400 text-[11px] font-bold font-mono">DV</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">DevOps Engineer</div>
-                <p class="text-white/20 text-xs leading-relaxed">CI/CD &middot;
-                  Docker &middot; Vercel/Cloudflare &middot; GitHub Actions</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-indigo-500/10 text-indigo-400">CI/CD</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@devops</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @seo -->
-          <div class="reveal agent-card bento-card p-5 agent-card--dots">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-lime-500/10 flex items-center justify-center shrink-0 border border-lime-500/15">
-                <span
-                  class="text-lime-400 text-[11px] font-bold font-mono">SE</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">SEO Specialist</div>
-                <p class="text-white/20 text-xs leading-relaxed">Meta tags
-                  &middot; JSON-LD &middot; Core Web Vitals &middot;
-                  Sitemaps</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-lime-500/10 text-lime-400">SEO</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@seo</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @android -->
-          <div
-            class="reveal reveal-delay-1 agent-card bento-card p-5 agent-card--corner">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center shrink-0 border border-green-500/15">
-                <span
-                  class="text-green-400 text-[11px] font-bold font-mono">AN</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">Android Developer</div>
-                <p class="text-white/20 text-xs leading-relaxed">Kotlin &middot;
-                  Jetpack Compose &middot; Material 3 &middot; Google Play</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-green-500/10 text-green-400">Kotlin</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@android</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- @flutter -->
-          <div
-            class="reveal reveal-delay-2 agent-card bento-card p-5 agent-card--dots">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center shrink-0 border border-sky-500/15">
-                <span
-                  class="text-sky-400 text-[11px] font-bold font-mono">FL</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="font-medium text-sm mb-1">Flutter Developer</div>
-                <p class="text-white/20 text-xs leading-relaxed">Dart &middot;
-                  Flutter SDK &middot; Material 3 &middot; Bloc/Riverpod</p>
-                <div class="flex items-center gap-2 mt-3">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-sky-500/10 text-sky-400">Flutter</span>
-                  <code
-                    class="text-[10px] text-white/20 font-mono ml-auto">@flutter</code>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="hr-accent max-w-6xl mx-auto"></div>
-
-    <!-- ===== CAPABILITIES ===== -->
-    <section id="capabilities" class="relative py-20 lg:py-32">
-      <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
-        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
-
-          <!-- Left: TOC -->
-          <div class="reveal lg:col-span-4">
-            <div class="accent-line mb-8"></div>
-            <h2 class="text-2xl sm:text-3xl font-bold mb-3">Capabilities</h2>
-            <p class="text-white/25 text-sm leading-relaxed mb-8">
-              Everything your AI team needs, pre-configured and ready.
-            </p>
-            <div class="hidden lg:block space-y-1 text-sm sticky top-20">
-              <a href="#cap-mcp"
-                class="block py-2 px-3 rounded-lg text-white/25 hover:text-white/55 hover:bg-white/[0.02] transition-all">MCP
-                Servers</a>
-              <a href="#cap-skills"
-                class="block py-2 px-3 rounded-lg text-white/25 hover:text-white/55 hover:bg-white/[0.02] transition-all">Skill
-                Playbooks</a>
-              <a href="#cap-commands"
-                class="block py-2 px-3 rounded-lg text-white/25 hover:text-white/55 hover:bg-white/[0.02] transition-all">Slash
-                Commands</a>
-            </div>
-          </div>
-
-          <!-- Right: Content -->
-          <div class="lg:col-span-8 space-y-14">
-
-            <!-- MCP Servers -->
-            <div id="cap-mcp" class="reveal">
-              <div class="flex items-center gap-3 mb-6">
-                <div
-                  class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center">
-                  <svg class="w-4 h-4 text-accent" fill="none"
-                    stroke="currentColor" viewBox="0 0 24 24"><path
-                      stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold">6 MCP Servers</h3>
-                  <span class="text-white/20 text-xs font-mono">Model Context
-                    Protocol</span>
-                </div>
-              </div>
-              <div class="bento-card overflow-hidden">
-                <div
-                  class="mcp-row py-4 px-5 flex items-center justify-between gap-4">
-                  <div class="flex items-center gap-3">
-                    <span class="status-dot status-active"></span>
-                    <span class="text-sm font-medium">Nuxt</span>
-                    <span class="text-white/20 text-xs font-mono">remote</span>
-                  </div>
-                  <span class="text-white/20 text-xs hidden sm:block">Docs,
-                    blog, deployment guides</span>
-                </div>
-                <div
-                  class="mcp-row py-4 px-5 flex items-center justify-between gap-4">
-                  <div class="flex items-center gap-3">
-                    <span class="status-dot status-active"></span>
-                    <span class="text-sm font-medium">Nuxt UI</span>
-                    <span class="text-white/20 text-xs font-mono">remote</span>
-                  </div>
-                  <span class="text-white/20 text-xs hidden sm:block">Component
-                    docs &middot; Examples</span>
-                </div>
-                <div
-                  class="mcp-row py-4 px-5 flex items-center justify-between gap-4">
-                  <div class="flex items-center gap-3">
-                    <span class="status-dot status-active"></span>
-                    <span class="text-sm font-medium">Playwright</span>
-                    <span class="text-white/20 text-xs font-mono">stdio</span>
-                  </div>
-                  <span class="text-white/20 text-xs hidden sm:block">Browser
-                    automation &middot; E2E</span>
-                </div>
-                <div
-                  class="mcp-row py-4 px-5 flex items-center justify-between gap-4">
-                  <div class="flex items-center gap-3">
-                    <span class="status-dot status-active"></span>
-                    <span class="text-sm font-medium">Postman</span>
-                    <span class="text-white/20 text-xs font-mono">remote</span>
-                  </div>
-                  <span class="text-white/20 text-xs hidden sm:block">API
-                    management &middot; Collections</span>
-                </div>
-                <div
-                  class="mcp-row py-4 px-5 flex items-center justify-between gap-4">
-                  <div class="flex items-center gap-3">
-                    <span class="status-dot status-inactive"></span>
-                    <span class="text-white/40 text-sm font-medium">Figma</span>
-                    <span class="text-white/20 text-xs font-mono">stdio</span>
-                  </div>
-                  <span class="text-white/15 text-xs hidden sm:block">Design
-                    file access (token required)</span>
-                </div>
-                <div
-                  class="mcp-row py-4 px-5 flex items-center justify-between gap-4">
-                  <div class="flex items-center gap-3">
-                    <span class="status-dot status-inactive"></span>
-                    <span class="text-white/40 text-sm font-medium">Google
-                      Stitch</span>
-                    <span class="text-white/20 text-xs font-mono">remote</span>
-                  </div>
-                  <span class="text-white/15 text-xs hidden sm:block">AI design
-                    generation</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Skills -->
-            <div id="cap-skills" class="reveal">
-              <div class="flex items-center gap-3 mb-6">
-                <div
-                  class="w-8 h-8 rounded-lg bg-violet/10 flex items-center justify-center">
-                  <svg class="w-4 h-4 text-violet" fill="none"
-                    stroke="currentColor" viewBox="0 0 24 24"><path
-                      stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold">62 Skill Playbooks</h3>
-                  <span class="text-white/20 text-xs font-mono">Domain
-                    expertise, auto-loaded</span>
-                </div>
-              </div>
-              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                <div class="bento-card p-4 hover:bg-raised transition-colors">
-                  <div
-                    class="text-white/50 text-xs font-semibold mb-1.5">Core</div>
-                  <div
-                    class="text-white/20 text-[10px] leading-relaxed">coding-standards,
-                    security-review, tdd-workflow, impeccable, nuxt-ui &middot;
-                    <strong class="text-white/35">16 skills</strong></div>
-                </div>
-                <div class="bento-card p-4 hover:bg-raised transition-colors">
-                  <div
-                    class="text-white/50 text-xs font-semibold mb-1.5">Flutter</div>
-                  <div
-                    class="text-white/20 text-[10px] leading-relaxed">widget-test,
-                    responsive-layout, routing, localization, http &middot;
-                    <strong class="text-white/35">11 skills</strong></div>
-                </div>
-                <div class="bento-card p-4 hover:bg-raised transition-colors">
-                  <div
-                    class="text-white/50 text-xs font-semibold mb-1.5">Dart</div>
-                  <div
-                    class="text-white/20 text-[10px] leading-relaxed">unit-test,
-                    cli-app, coverage, static-analysis, pattern-matching
-                    &middot; <strong class="text-white/35">9
-                      skills</strong></div>
-                </div>
-                <div class="bento-card p-4 hover:bg-raised transition-colors">
-                  <div
-                    class="text-white/50 text-xs font-semibold mb-1.5">Android</div>
-                  <div
-                    class="text-white/20 text-[10px] leading-relaxed">jetpack-compose,
-                    navigation-3, firebase, edge-to-edge, billing &middot;
-                    <strong class="text-white/35">9 skills</strong></div>
-                </div>
-                <div class="bento-card p-4 hover:bg-raised transition-colors">
-                  <div
-                    class="text-white/50 text-xs font-semibold mb-1.5">Backend
-                    &amp; DB</div>
-                  <div
-                    class="text-white/20 text-[10px] leading-relaxed">postgres-patterns,
-                    springboot* (7), django* (4), jpa &middot; <strong
-                      class="text-white/35">14 skills</strong></div>
-                </div>
-                <div class="bento-card p-4 hover:bg-raised transition-colors">
-                  <div class="text-white/50 text-xs font-semibold mb-1.5">Go
-                    &bull; Python</div>
-                  <div
-                    class="text-white/20 text-[10px] leading-relaxed">golang-patterns,
-                    golang-testing, python-patterns, python-testing &middot;
-                    <strong class="text-white/35">4 skills</strong></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Commands -->
-            <div id="cap-commands" class="reveal">
-              <div class="flex items-center gap-3 mb-6">
-                <div
-                  class="w-8 h-8 rounded-lg bg-teal/10 flex items-center justify-center">
-                  <svg class="w-4 h-4 text-teal" fill="none"
-                    stroke="currentColor" viewBox="0 0 24 24"><path
-                      stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold">36 Slash Commands</h3>
-                  <span class="text-white/20 text-xs font-mono">Trigger
-                    workflows instantly</span>
-                </div>
-              </div>
-              <div class="grid sm:grid-cols-2 gap-2">
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/plan</code>
-                  <span class="text-white/20 text-[10px]">Implementation
-                    plan</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/orchestrate</code>
-                  <span class="text-white/20 text-[10px]">Multi-agent
-                    workflow</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/code-review</code>
-                  <span class="text-white/20 text-[10px]">Quality &amp;
-                    security</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/security</code>
-                  <span class="text-white/20 text-[10px]">Vulnerability
-                    audit</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/tdd</code>
-                  <span class="text-white/20 text-[10px]">TDD workflow</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/e2e</code>
-                  <span class="text-white/20 text-[10px]">E2E test
-                    generation</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/build-fix</code>
-                  <span class="text-white/20 text-[10px]">Fix build
-                    errors</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/refactor-clean</code>
-                  <span class="text-white/20 text-[10px]">Dead code
-                    removal</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/android-build</code>
-                  <span class="text-white/20 text-[10px]">Build APK/AAB</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/flutter-build</code>
-                  <span class="text-white/20 text-[10px]">Build Flutter</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/gpc-release</code>
-                  <span class="text-white/20 text-[10px]">Play Store
-                    publish</span>
-                </div>
-                <div
-                  class="cmd-chip bento-card px-4 py-3 flex items-center justify-between border-white/[0.04]">
-                  <code
-                    class="text-accent/70 text-xs font-mono font-medium">/update-docs</code>
-                  <span class="text-white/20 text-[10px]">Documentation</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="hr-accent max-w-6xl mx-auto"></div>
-
-    <!-- ===== INSTALL ===== -->
-    <section id="install" class="relative py-20 lg:py-32">
-      <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
-        <div class="reveal text-center max-w-2xl mx-auto mb-14">
-          <div class="accent-line mx-auto mb-8"></div>
-          <h2 class="text-3xl sm:text-4xl font-bold mb-4">One command. Full
-            team.</h2>
-          <p class="text-white/25 text-sm sm:text-base leading-relaxed">
-            Zero config. Works in any project directory. Your AI team is ready
-            instantly.
-          </p>
-        </div>
-
-        <div class="reveal grid lg:grid-cols-2 gap-6">
-          <!-- Quick install -->
-          <div class="bento-card p-7 relative overflow-hidden">
-            <div
-              class="absolute top-0 right-0 w-40 h-40 bg-accent/[0.02] rounded-full -translate-y-20 translate-x-20 blur-3xl pointer-events-none"></div>
-            <div class="relative flex items-center gap-2 mb-5">
-              <span
-                class="px-2 py-0.5 rounded text-[10px] font-mono bg-accent/10 text-accent border border-accent/15">recommended</span>
-              <h3 class="font-semibold text-sm">Quick install</h3>
-            </div>
-            <div class="code-block p-4 mb-5">
-              <code class="text-xs font-mono leading-loose block">
-                <span class="text-white/20"># In your project
-                  directory</span><br />
-                <span class="text-accent/90">npx copilot-agent-kit init</span>
-              </code>
-            </div>
-            <ul class="text-white/20 text-xs space-y-2.5">
-              <li class="flex items-start gap-2">
-                <svg class="w-3.5 h-3.5 text-accent/40 mt-0.5 shrink-0"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-                    stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                Copies <span
-                  class="font-mono text-white/35">.github/agents/</span>, <span
-                  class="font-mono text-white/35">.github/hooks/</span>, <span
-                  class="font-mono text-white/35">.github/workflows/</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-3.5 h-3.5 text-accent/40 mt-0.5 shrink-0"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-                    stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                No overwrite, safe for existing projects
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-3.5 h-3.5 text-accent/40 mt-0.5 shrink-0"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-                    stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                Pass <span class="font-mono text-white/35">--force</span> to
-                overwrite
-              </li>
-            </ul>
-          </div>
-
-          <!-- Global install -->
-          <div class="bento-card p-7 relative overflow-hidden">
-            <h3 class="font-semibold text-sm mb-5">Global install</h3>
-            <div class="code-block p-4 mb-5">
-              <code class="text-xs font-mono leading-loose block">
-                <span class="text-white/20"># Install once, use
-                  everywhere</span><br />
-                <span class="text-accent/90">npm install -g
-                  copilot-agent-kit</span><br /><br />
-                <span class="text-white/20"># Then init any project</span><br />
-                <span class="text-accent/90">cd my-project && copilot-agent-kit
-                  init</span>
-              </code>
-            </div>
-            <ul class="text-white/20 text-xs space-y-2.5">
-              <li class="flex items-start gap-2">
-                <svg class="w-3.5 h-3.5 text-accent/40 mt-0.5 shrink-0"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-                    stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                All 13 agents available project-wide
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-3.5 h-3.5 text-accent/40 mt-0.5 shrink-0"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-                    stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                Commands, skills, rules included
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-3.5 h-3.5 text-accent/40 mt-0.5 shrink-0"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-                    stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                MCP servers: Nuxt, Nuxt UI, Playwright, Postman
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="hr-accent max-w-6xl mx-auto"></div>
-
-    <!-- ===== USAGE ===== -->
-    <section id="start" class="relative py-20 lg:py-32">
-      <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
-        <div class="reveal grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-
-          <!-- Left: text -->
-          <div>
-            <div class="accent-line mb-8"></div>
-            <h2 class="text-2xl sm:text-3xl font-bold mb-3">Usage</h2>
-            <p class="text-white/25 text-sm leading-relaxed mb-8">
-              After install, <span
-                class="font-mono text-accent/50">13 specialized agents</span>
-              are ready. The <strong
-                class="text-white/50 font-medium">IT Leader</strong> activates
-              automatically.
-            </p>
-            <div class="space-y-4">
-              <div class="flex items-start gap-3">
-                <span
-                  class="inline-flex items-center justify-center w-6 h-6 rounded-lg bg-accent/10 text-accent/60 font-mono text-xs shrink-0">1</span>
-                <div>
-                  <div class="text-white/50 text-sm font-medium">IT Leader
-                    orchestrates</div>
-                  <div class="text-white/20 text-xs mt-0.5">Give it a feature
-                    request &mdash; it plans, delegates, and integrates.</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span
-                  class="inline-flex items-center justify-center w-6 h-6 rounded-lg bg-accent/10 text-accent/60 font-mono text-xs shrink-0">2</span>
-                <div>
-                  <div class="text-white/50 text-sm font-medium">Or call
-                    subagents directly</div>
-                  <div class="text-white/20 text-xs mt-0.5">Use <span
-                      class="font-mono text-white/35">@mention</span> for
-                    specific tasks.</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span
-                  class="inline-flex items-center justify-center w-6 h-6 rounded-lg bg-accent/10 text-accent/60 font-mono text-xs shrink-0">3</span>
-                <div>
-                  <div class="text-white/50 text-sm font-medium">Use slash
-                    commands</div>
-                  <div class="text-white/20 text-xs mt-0.5"><span
-                      class="font-mono text-white/35">/plan</span>, <span
-                      class="font-mono text-white/35">/tdd</span>, <span
-                      class="font-mono text-white/35">/code-review</span>, and
-                    33 more.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: code -->
-          <div class="code-block p-5">
-            <code class="text-xs font-mono leading-loose block">
-              <span class="text-white/20"># Let the IT Leader handle complex
-                features</span><br />
-              <span class="text-white/45">Buat fitur marketplace dengan halaman
-                listing, detail,<br />
-                dan form create. Backend API untuk CRUD markets.<br />
-                Setup CI/CD pipeline dan optimasi SEO.</span><br /><br />
-              <span class="text-white/20"># Or call subagents
-                directly</span><br />
-              <span class="text-blue-400/60">@frontend-nuxt</span> <span
-                class="text-white/45">Buat halaman login dengan Nuxt
-                UI.</span><br />
-              <span class="text-emerald-400/60">@backend</span> <span
-                class="text-white/45">Add endpoint POST
-                /api/auth/login.</span><br />
-              <span class="text-green-400/60">@android</span> <span
-                class="text-white/45">Buat login screen dengan Jetpack
-                Compose.</span><br />
-              <span class="text-sky-400/60">@flutter</span> <span
-                class="text-white/45">Buat screen product list dengan Bloc
-                pattern.</span><br />
-              <span class="text-amber-400/60">@designer</span> <span
-                class="text-white/45">Review UX flow halaman
-                checkout.</span><br />
-              <span class="text-red-400/60">@reviewer</span> <span
-                class="text-white/45">Audit security untuk authentication
-                module.</span>
-            </code>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="hr-accent max-w-6xl mx-auto"></div>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="relative py-10">
-      <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
-        <div
-          class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div class="flex items-center gap-2.5">
-            <span
-              class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-accent text-black text-xs font-bold font-mono shadow-lg shadow-accent/20">K</span>
-            <div>
-              <div class="text-white/50 text-xs font-medium">Copilot Agent
-                KIT</div>
-              <div class="text-white/15 text-[10px]">Software Developer Agent
-                System</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 text-xs text-white/20">
-            <a href="https://github.com/defuj/copilot-agent-kit"
-              target="_blank" rel="noopener"
-              class="flex items-center gap-1.5 hover:text-white/45 transition-colors">
-              <svg class="w-3.5 h-3.5" fill="currentColor"
-                viewBox="0 0 24 24"><path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>
-              GitHub
+          <!-- CTAs -->
+          <div class="hero-line flex flex-wrap gap-4">
+            <a href="#install" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 10px; font-family: 'Fira Code', monospace; font-size: 14px; font-weight: 500; color: #fff; background: var(--color-primary); text-decoration: none; transition: background 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 0 20px var(--color-primary-glow);"
+               onmouseover="this.style.background='var(--color-primary-hover)'; this.style.boxShadow='0 0 30px var(--color-primary-glow)'"
+               onmouseout="this.style.background='var(--color-primary)'; this.style.boxShadow='0 0 20px var(--color-primary-glow)'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              npx copilot-agent-kit init
             </a>
-            <span>v1.0.0</span>
-            <span>MIT</span>
+            <a href="https://github.com/defuj/copilot-agent-kit" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 10px; font-family: 'Rubik', sans-serif; font-size: 14px; font-weight: 500; color: var(--color-text); background: transparent; text-decoration: none; border: 1px solid var(--color-border); transition: border-color 0.2s ease, color 0.2s ease;"
+               onmouseover="this.style.borderColor='var(--color-border-hover)'; this.style.color='var(--color-text-heading)'"
+               onmouseout="this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text)'">
+              Read the docs
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </div>
         </div>
-        <div
-          class="mt-6 pt-4 border-t border-white/[0.03] text-white/10 text-[10px] text-center sm:text-left">
-          Powered by GitHub Copilot. Designed for AI-native development teams.
+
+        <!-- Stats row -->
+        <div class="hero-line grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-3xl">
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 20px; text-align: center;">
+            <div class="stat-number" data-count="13">0</div>
+            <div style="font-size: 13px; color: var(--color-text-muted); margin-top: 4px;">Specialized Agents</div>
+          </div>
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 20px; text-align: center;">
+            <div class="stat-number" data-count="62">0</div>
+            <div style="font-size: 13px; color: var(--color-text-muted); margin-top: 4px;">Crafted Skills</div>
+          </div>
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 20px; text-align: center;">
+            <div class="stat-number" data-count="36">0</div>
+            <div style="font-size: 13px; color: var(--color-text-muted); margin-top: 4px;">Slash Commands</div>
+          </div>
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 20px; text-align: center;">
+            <div class="stat-number" data-count="6">0</div>
+            <div style="font-size: 13px; color: var(--color-text-muted); margin-top: 4px;">MCP Integrations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+    IT LEADER — THE NEURAL HUB
+    ════════════════════════════════════════════ -->
+    <section id="leader" class="relative py-28 overflow-hidden" style="background: var(--color-bg-alt);">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-4" style="color: var(--color-text-heading);">The Neural Hub</h2>
+          <p class="text-sm max-w-2xl mx-auto" style="color: var(--color-text-muted);">An intelligent orchestrator routes work across 12 specialized agents. Each agent carries domain expertise and project context, forming a collective intelligence that understands your entire stack.</p>
+        </div>
+
+        <!-- Network visualization -->
+        <div class="relative reveal max-w-3xl mx-auto" style="height: 480px;">
+          <!-- Center node -- IT Leader -->
+          <div class="hub-node center" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">IT<br/>Leader</div>
+
+          <!-- Connection lines (SVG) -->
+          <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 1;">
+            <line x1="50%" y1="50%" x2="50%" y2="5%" stroke="var(--agent-nuxt)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.5;0.1" dur="3s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="80%" y2="12%" stroke="var(--agent-react)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.5;0.1" dur="3.5s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="85%" y2="40%" stroke="var(--agent-backend)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.4;0.1" dur="4s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="75%" y2="70%" stroke="var(--agent-laravel)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.45;0.1" dur="3.2s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="50%" y2="95%" stroke="var(--agent-ci3)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3.8s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="25%" y2="70%" stroke="var(--agent-android)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.5;0.1" dur="2.8s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="15%" y2="40%" stroke="var(--agent-flutter)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.45;0.1" dur="3.3s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="20%" y2="12%" stroke="var(--agent-designer)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.4;0.1" dur="4.2s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="40%" y2="5%" stroke="var(--agent-reviewer)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.5;0.1" dur="3.6s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="60%" y2="95%" stroke="var(--agent-database)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3.1s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="15%" y2="65%" stroke="var(--agent-devops)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.45;0.1" dur="4.5s" repeatCount="indefinite"/>
+            </line>
+            <line x1="50%" y1="50%" x2="35%" y2="95%" stroke="var(--agent-seo)" stroke-width="1" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.35;0.1" dur="3.9s" repeatCount="indefinite"/>
+            </line>
+          </svg>
+
+          <!-- Orbital agent nodes -->
+          <div class="hub-node" style="top: 5%; left: 50%; transform: translate(-50%, -50%); background: var(--agent-nuxt); color: #fff; box-shadow: 0 0 12px var(--agent-nuxt);">Nuxt</div>
+          <div class="hub-node" style="top: 12%; left: 80%; transform: translate(-50%, -50%); background: var(--agent-react); color: #fff; box-shadow: 0 0 12px var(--agent-react);">React</div>
+          <div class="hub-node" style="top: 40%; left: 85%; transform: translate(-50%, -50%); background: var(--agent-backend); color: #fff; box-shadow: 0 0 12px var(--agent-backend);">Backend</div>
+          <div class="hub-node" style="top: 70%; left: 75%; transform: translate(-50%, -50%); background: var(--agent-laravel); color: #fff; box-shadow: 0 0 12px var(--agent-laravel);">Laravel</div>
+          <div class="hub-node" style="top: 95%; left: 50%; transform: translate(-50%, -50%); background: var(--agent-ci3); color: #111; box-shadow: 0 0 12px var(--agent-ci3);">CI3</div>
+          <div class="hub-node" style="top: 70%; left: 25%; transform: translate(-50%, -50%); background: var(--agent-android); color: #fff; box-shadow: 0 0 12px var(--agent-android);">Android</div>
+          <div class="hub-node" style="top: 40%; left: 15%; transform: translate(-50%, -50%); background: var(--agent-flutter); color: #fff; box-shadow: 0 0 12px var(--agent-flutter);">Flutter</div>
+          <div class="hub-node" style="top: 12%; left: 20%; transform: translate(-50%, -50%); background: var(--agent-designer); color: #111; box-shadow: 0 0 12px var(--agent-designer);">Designer</div>
+          <div class="hub-node" style="top: 5%; left: 40%; transform: translate(-50%, -50%); background: var(--agent-reviewer); color: #fff; box-shadow: 0 0 12px var(--agent-reviewer);">Reviewer</div>
+          <div class="hub-node" style="top: 95%; left: 60%; transform: translate(-50%, -50%); background: var(--agent-database); color: #fff; box-shadow: 0 0 12px var(--agent-database);">Database</div>
+          <div class="hub-node" style="top: 65%; left: 15%; transform: translate(-50%, -50%); background: var(--agent-devops); color: #fff; box-shadow: 0 0 12px var(--agent-devops);">DevOps</div>
+          <div class="hub-node" style="top: 95%; left: 35%; transform: translate(-50%, -50%); background: var(--agent-seo); color: #111; box-shadow: 0 0 12px var(--agent-seo);">SEO</div>
+        </div>
+
+        <!-- Agent groups -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 reveal">
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px;">
+            <h3 class="font-display font-semibold text-sm mb-4" style="color: var(--color-text-heading);">Frontend</h3>
+            <div class="flex flex-wrap gap-2">
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-nuxt); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @frontend-nuxt</span>
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-react); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @frontend-react</span>
+            </div>
+          </div>
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px;">
+            <h3 class="font-display font-semibold text-sm mb-4" style="color: var(--color-text-heading);">Backend</h3>
+            <div class="flex flex-wrap gap-2">
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-backend); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @backend</span>
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-laravel); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @laravel</span>
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-ci3); color: #111;"><span class="cat-dot" style="background: rgba(0,0,0,0.3);"></span> @ci3</span>
+            </div>
+          </div>
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px;">
+            <h3 class="font-display font-semibold text-sm mb-4" style="color: var(--color-text-heading);">Mobile</h3>
+            <div class="flex flex-wrap gap-2">
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-android); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @android</span>
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-flutter); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @flutter</span>
+            </div>
+          </div>
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px;">
+            <h3 class="font-display font-semibold text-sm mb-4" style="color: var(--color-text-heading);">Support</h3>
+            <div class="flex flex-wrap gap-2">
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-designer); color: #111;"><span class="cat-dot" style="background: rgba(0,0,0,0.3);"></span> @designer</span>
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-reviewer); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @reviewer</span>
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-database); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @database</span>
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-devops); color: #fff;"><span class="cat-dot" style="background: rgba(255,255,255,0.4);"></span> @devops</span>
+              <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 12px; background: var(--agent-seo); color: #111;"><span class="cat-dot" style="background: rgba(0,0,0,0.3);"></span> @seo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+    AGENTS DIRECTORY
+    ════════════════════════════════════════════ -->
+    <section id="agents" class="relative py-28" style="background: var(--color-bg);">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-4" style="color: var(--color-text-heading);">Agent Directory</h2>
+          <p class="text-sm max-w-xl mx-auto" style="color: var(--color-text-muted);">Each agent is a specialized expert tuned to a domain. They share project context and route work through the IT Leader orchestrator.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- 1. Frontend Nuxt -->
+          <div class="agent-card reveal">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-nuxt); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@frontend-nuxt</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-nuxt); color: #fff; margin-left: auto; font-weight: 500;">Nuxt 4</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Nuxt.js + Vue 3 specialist. Builds reusable components, manages state with Pinia, handles SSR hydration, and auto-imports composables.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">vue 3</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">nuxt ui</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">tailwind</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">typescript</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">pinia</span>
+            </div>
+          </div>
+
+          <!-- 2. Frontend React -->
+          <div class="agent-card reveal reveal-delay-1">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-react); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@frontend-react</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-react); color: #fff; margin-left: auto; font-weight: 500;">React 19</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">React + Next.js expert. Implements server components, optimizes bundle splits, configures App Router, and applies Vercel performance patterns.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">next.js 15</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">server components</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">shadcn/ui</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">react 19</span>
+            </div>
+          </div>
+
+          <!-- 3. Backend -->
+          <div class="agent-card reveal reveal-delay-2">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-backend); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@backend</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-backend); color: #fff; margin-left: auto; font-weight: 500;">Node.js</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Node.js + Express API architect. Designs RESTful routes, manages Prisma schemas, configures auth flows, and handles database migrations.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">express</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">prisma</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">postgres</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">jwt</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">stripe</span>
+            </div>
+          </div>
+
+          <!-- 4. Laravel -->
+          <div class="agent-card reveal reveal-delay-3">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-laravel); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@laravel</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-laravel); color: #fff; margin-left: auto; font-weight: 500;">Laravel 11</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Laravel + PHP craftsman. Builds Eloquent models, writes Artisan commands, configures queues, and structures service layers.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">eloquent</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">artisan</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">livewire</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">horizon</span>
+            </div>
+          </div>
+
+          <!-- 5. CI3 -->
+          <div class="agent-card reveal">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-ci3); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@ci3</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-ci3); color: #111; margin-left: auto; font-weight: 500;">CI3</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">CodeIgniter 3 specialist. Maintains HMVC modules, optimizes Query Builder, handles legacy migrations, and enforces CI3 security rules.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">hmvc</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">query builder</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">migration</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">myth-auth</span>
+            </div>
+          </div>
+
+          <!-- 6. Android -->
+          <div class="agent-card reveal reveal-delay-1">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-android); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@android</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-android); color: #fff; margin-left: auto; font-weight: 500;">Android</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Android + Kotlin developer. Implements Jetpack Compose screens, manages Hilt DI, handles CameraX, and publishes to Google Play Console.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">kotlin</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">jetpack compose</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">hilt</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">room</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">gpc</span>
+            </div>
+          </div>
+
+          <!-- 7. Flutter -->
+          <div class="agent-card reveal reveal-delay-2">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-flutter); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@flutter</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-flutter); color: #fff; margin-left: auto; font-weight: 500;">Flutter</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Flutter + Dart specialist. Builds Material/Cupertino widgets, manages state with Bloc or Riverpod, and implements responsive layouts.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">dart</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">bloc</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">riverpod</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">go_router</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">firebase</span>
+            </div>
+          </div>
+
+          <!-- 8. Designer -->
+          <div class="agent-card reveal reveal-delay-3">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-designer); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@designer</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-designer); color: #111; margin-left: auto; font-weight: 500;">Figma</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Design-systems architect. Translates Figma into pixel-perfect UI, writes Impeccable design tokens, and enforces accessibility standards.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">figma</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">design systems</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">oklch</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">a11y</span>
+            </div>
+          </div>
+
+          <!-- 9. Reviewer -->
+          <div class="agent-card reveal">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-reviewer); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@reviewer</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-reviewer); color: #fff; margin-left: auto; font-weight: 500;">Code Review</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Code quality gate. Audits PRs for security flaws, performance regressions, anti-patterns, and enforces team conventions.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">security</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">performance</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">anti-patterns</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">best practices</span>
+            </div>
+          </div>
+
+          <!-- 10. Database -->
+          <div class="agent-card reveal reveal-delay-1">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-database); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@database</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-database); color: #fff; margin-left: auto; font-weight: 500;">PostgreSQL</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Database optimizer. Designs schemas, writes indexed queries, sets up replication, and tunes Postgres for analytical workloads.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">postgresql</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">indexing</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">clickhouse</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">bigquery</span>
+            </div>
+          </div>
+
+          <!-- 11. DevOps -->
+          <div class="agent-card reveal reveal-delay-2">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-devops); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@devops</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-devops); color: #fff; margin-left: auto; font-weight: 500;">Infra</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Cloud infrastructure engineer. Manages GKE clusters, sets up Cloud Run services, configures CI/CD pipelines, and monitors uptime.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">gke</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">cloud run</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">docker</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">github actions</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">terraform</span>
+            </div>
+          </div>
+
+          <!-- 12. SEO -->
+          <div class="agent-card reveal reveal-delay-3">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="cat-dot" style="background: var(--agent-seo); width: 12px; height: 12px;"></span>
+              <span class="font-mono font-semibold text-sm" style="color: var(--color-text-heading);">@seo</span>
+              <span style="font-size: 11px; padding: 2px 8px; border-radius: 4px; background: var(--agent-seo); color: #111; margin-left: auto; font-weight: 500;">SEO</span>
+            </div>
+            <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-muted);">Search visibility strategist. Optimizes meta tags, generates structured data, improves Core Web Vitals, and audits site architecture.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">structured data</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">core web vitals</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">meta tags</span>
+              <span style="font-size: 10px; padding: 2px 8px; border-radius: 4px; background: var(--color-raised); color: var(--color-text-muted);">sitemap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+    TECH STACKS
+    ════════════════════════════════════════════ -->
+    <section class="relative py-28" style="background: var(--color-bg-alt);">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-4" style="color: var(--color-text-heading);">Supported Stacks</h2>
+          <p class="text-sm max-w-xl mx-auto" style="color: var(--color-text-muted);">Every agent is tuned to a specific framework or platform. Mix and match across your projects.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="stack-card reveal flex items-center gap-4">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--agent-nuxt); display: flex; align-items: center; justify-content: center; color: #fff; font-family: Manrope, sans-serif; font-weight: 800; font-size: 18px; flex-shrink: 0;">N</div>
+            <div>
+              <div class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">Nuxt</div>
+              <div class="text-xs" style="color: var(--color-text-muted);">Vue 3, Nuxt UI, Pinia</div>
+            </div>
+          </div>
+          <div class="stack-card reveal reveal-delay-1 flex items-center gap-4">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--agent-react); display: flex; align-items: center; justify-content: center; color: #fff; font-family: Manrope, sans-serif; font-weight: 800; font-size: 18px; flex-shrink: 0;">R</div>
+            <div>
+              <div class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">React</div>
+              <div class="text-xs" style="color: var(--color-text-muted);">Next.js 15, shadcn/ui</div>
+            </div>
+          </div>
+          <div class="stack-card reveal reveal-delay-2 flex items-center gap-4">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--agent-backend); display: flex; align-items: center; justify-content: center; color: #fff; font-family: Manrope, sans-serif; font-weight: 800; font-size: 18px; flex-shrink: 0;">N</div>
+            <div>
+              <div class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">Node.js</div>
+              <div class="text-xs" style="color: var(--color-text-muted);">Express, Prisma, Postgres</div>
+            </div>
+          </div>
+          <div class="stack-card reveal reveal-delay-3 flex items-center gap-4">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--agent-laravel); display: flex; align-items: center; justify-content: center; color: #fff; font-family: Manrope, sans-serif; font-weight: 800; font-size: 18px; flex-shrink: 0;">L</div>
+            <div>
+              <div class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">Laravel</div>
+              <div class="text-xs" style="color: var(--color-text-muted);">PHP, Eloquent, Artisan</div>
+            </div>
+          </div>
+          <div class="stack-card reveal flex items-center gap-4">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--agent-ci3); display: flex; align-items: center; justify-content: center; color: #111; font-family: Manrope, sans-serif; font-weight: 800; font-size: 18px; flex-shrink: 0;">C</div>
+            <div>
+              <div class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">CodeIgniter 3</div>
+              <div class="text-xs" style="color: var(--color-text-muted);">PHP, HMVC, Query Builder</div>
+            </div>
+          </div>
+          <div class="stack-card reveal reveal-delay-1 flex items-center gap-4">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--agent-android); display: flex; align-items: center; justify-content: center; color: #fff; font-family: Manrope, sans-serif; font-weight: 800; font-size: 18px; flex-shrink: 0;">A</div>
+            <div>
+              <div class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">Android</div>
+              <div class="text-xs" style="color: var(--color-text-muted);">Kotlin, Jetpack Compose</div>
+            </div>
+          </div>
+          <div class="stack-card reveal reveal-delay-2 flex items-center gap-4">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--agent-flutter); display: flex; align-items: center; justify-content: center; color: #fff; font-family: Manrope, sans-serif; font-weight: 800; font-size: 18px; flex-shrink: 0;">F</div>
+            <div>
+              <div class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">Flutter</div>
+              <div class="text-xs" style="color: var(--color-text-muted);">Dart, Bloc, Riverpod</div>
+            </div>
+          </div>
+          <div class="stack-card reveal reveal-delay-3 flex items-center gap-4">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--color-primary); display: flex; align-items: center; justify-content: center; color: #fff; font-family: Manrope, sans-serif; font-weight: 800; font-size: 18px; flex-shrink: 0;">+</div>
+            <div>
+              <div class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">And More</div>
+              <div class="text-xs" style="color: var(--color-text-muted);">Django, Spring Boot, Go</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+    CAPABILITIES
+    ════════════════════════════════════════════ -->
+    <section id="capabilities" class="relative py-28" style="background: var(--color-bg);">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-4" style="color: var(--color-text-heading);">Capabilities</h2>
+          <p class="text-sm max-w-xl mx-auto" style="color: var(--color-text-muted);">Three dimensions of extensibility that make the agent kit truly multi-stack.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- MCP Servers -->
+          <div class="reveal" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 32px;">
+            <div class="flex items-center gap-3 mb-6">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: var(--color-primary-dim); color: var(--color-primary);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="8" height="8" rx="2"/><rect x="14" y="2" width="8" height="8" rx="2"/><rect x="2" y="14" width="8" height="8" rx="2"/><rect x="14" y="14" width="8" height="8" rx="2"/></svg>
+              </span>
+              <div>
+                <h3 class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">MCP Servers</h3>
+                <span class="text-xs" style="color: var(--color-text-muted);">6 integrations</span>
+              </div>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-success);"></span>
+                <span class="font-mono text-xs" style="color: var(--color-text);">Nuxt MCP</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-success);"></span>
+                <span class="font-mono text-xs" style="color: var(--color-text);">Nuxt UI MCP</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-success);"></span>
+                <span class="font-mono text-xs" style="color: var(--color-text);">Playwright MCP</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-warning);"></span>
+                <span class="font-mono text-xs" style="color: var(--color-text);">Figma MCP</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-success);"></span>
+                <span class="font-mono text-xs" style="color: var(--color-text);">Postman MCP</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-success);"></span>
+                <span class="font-mono text-xs" style="color: var(--color-text);">Stitch MCP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="reveal reveal-delay-1" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 32px;">
+            <div class="flex items-center gap-3 mb-6">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: var(--color-primary-dim); color: var(--color-primary);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </span>
+              <div>
+                <h3 class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">Skills</h3>
+                <span class="text-xs" style="color: var(--color-text-muted);">62 specialized skill files</span>
+              </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">frontend-patterns</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">design-system</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">testing</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">security</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">performance</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">animation</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">migration</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">ci/cd</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">deployment</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">accessibility</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">monitoring</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">code-review</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text);">+50 more</span>
+            </div>
+          </div>
+
+          <!-- Commands -->
+          <div class="reveal reveal-delay-2" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 32px;">
+            <div class="flex items-center gap-3 mb-6">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: var(--color-primary-dim); color: var(--color-primary);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              </span>
+              <div>
+                <h3 class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">Commands</h3>
+                <span class="text-xs" style="color: var(--color-text-muted);">36 slash commands</span>
+              </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/build</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/test</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/deploy</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/review</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/init</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/audit</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/migrate</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/seed</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/optimize</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/docs</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-primary-dim); color: var(--color-primary); font-family: 'Fira Code', monospace;">/reset</span>
+              <span style="font-size: 10px; padding: 3px 10px; border-radius: 6px; background: var(--color-raised); color: var(--color-text-muted); font-family: 'Fira Code', monospace;">+24 more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+    INSTALL
+    ════════════════════════════════════════════ -->
+    <section id="install" class="relative py-28" style="background: var(--color-bg-alt);">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <div class="reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-4" style="color: var(--color-text-heading);">Install in Seconds</h2>
+          <p class="text-sm mb-10" style="color: var(--color-text-muted);">Drop the full agent system into any project. No dependencies, no config, no vendor lock-in.</p>
+        </div>
+
+        <div class="terminal reveal text-left mb-10">
+          <div style="display: flex; align-items: center; gap: 8px; padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.06);">
+            <span class="terminal-dot" style="background: #ff5f57;"></span>
+            <span class="terminal-dot" style="background: #febc2e;"></span>
+            <span class="terminal-dot" style="background: #28c840;"></span>
+            <span style="margin-left: auto; font-size: 11px; color: rgba(255,255,255,0.3); font-family: 'Fira Code', monospace;">bash</span>
+          </div>
+          <div style="padding: 24px 28px;">
+            <div style="font-family: 'Fira Code', monospace; font-size: 14px; line-height: 1.6;">
+              <div style="color: rgba(255,255,255,0.15); margin-bottom: 8px;"># Copies 13 agents to your .github/ directory</div>
+              <div><span style="color: var(--color-text-muted);">$</span> <span style="color: var(--color-text-heading);">npx copilot-agent-kit init</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal flex items-center justify-center gap-8 text-xs" style="color: var(--color-text-muted);">
+          <div class="flex items-center gap-2">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            MIT License
+          </div>
+          <div class="flex items-center gap-2">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            Open Source
+          </div>
+          <div class="flex items-center gap-2">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            v1.0.0
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+    MARQUEE
+    ════════════════════════════════════════════ -->
+    <section class="relative py-12 overflow-hidden" style="background: var(--color-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="marquee-group">
+        <div class="marquee-track">
+          <!-- First set -->
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Nuxt 4</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Vue 3</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">React 19</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Next.js 15</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Node.js</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Express</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Prisma</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">PostgreSQL</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Laravel</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">CI3</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Kotlin</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Jetpack Compose</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Dart</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Flutter</span>
+          <!-- Duplicate for seamless scroll -->
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Nuxt 4</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Vue 3</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">React 19</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Next.js 15</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Node.js</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Express</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Prisma</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">PostgreSQL</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Laravel</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">CI3</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Kotlin</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Jetpack Compose</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Dart</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--color-surface); border: 1px solid var(--color-border); font-size: 12px; color: var(--color-text-muted); white-space: nowrap; font-family: 'Fira Code', monospace;">Flutter</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+    FOOTER
+    ════════════════════════════════════════════ -->
+    <footer class="relative py-16" style="background: var(--color-bg); border-top: 1px solid var(--color-border);">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          <!-- Brand -->
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 6px; background: var(--color-primary); color: #fff; font-family: Manrope, sans-serif; font-weight: 700; font-size: 13px;">K</span>
+              <span class="font-display font-semibold text-sm" style="color: var(--color-text-heading);">Copilot Agent KIT</span>
+            </div>
+            <p class="text-xs leading-relaxed" style="color: var(--color-text-muted);">A portable multi-stack software developer agent toolkit for GitHub Copilot.</p>
+          </div>
+
+          <!-- Product -->
+          <div>
+            <h4 class="font-display font-semibold text-xs mb-4" style="color: var(--color-text-heading);">Product</h4>
+            <div class="flex flex-col gap-2">
+              <a href="#agents" class="text-xs no-underline transition-colors" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">Agents</a>
+              <a href="#capabilities" class="text-xs no-underline transition-colors" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">Capabilities</a>
+              <a href="#install" class="text-xs no-underline transition-colors" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">Install</a>
+            </div>
+          </div>
+
+          <!-- Community -->
+          <div>
+            <h4 class="font-display font-semibold text-xs mb-4" style="color: var(--color-text-heading);">Community</h4>
+            <div class="flex flex-col gap-2">
+              <a href="https://github.com/defuj/copilot-agent-kit" target="_blank" rel="noopener noreferrer" class="text-xs no-underline transition-colors" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">GitHub</a>
+              <a href="https://github.com/defuj/copilot-agent-kit/issues" target="_blank" rel="noopener noreferrer" class="text-xs no-underline transition-colors" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">Issues</a>
+              <a href="https://github.com/defuj/copilot-agent-kit/discussions" target="_blank" rel="noopener noreferrer" class="text-xs no-underline transition-colors" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">Discussions</a>
+            </div>
+          </div>
+
+          <!-- Resources -->
+          <div>
+            <h4 class="font-display font-semibold text-xs mb-4" style="color: var(--color-text-heading);">Resources</h4>
+            <div class="flex flex-col gap-2">
+              <a href="https://github.com/defuj/copilot-agent-kit?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="text-xs no-underline transition-colors" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">README</a>
+              <a href="https://github.com/defuj/copilot-agent-kit?tab=MIT-1-ov-file" target="_blank" rel="noopener noreferrer" class="text-xs no-underline transition-colors" style="color: var(--color-text-muted);" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">License</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-6 text-center text-xs" style="border-top: 1px solid var(--color-border); color: var(--color-text-muted);">
+          &copy; 2026 defuj. Open source under MIT.
         </div>
       </div>
     </footer>
 
-    <!-- ===== SCRIPTS ===== -->
+    <!-- ════════════════════════════════════════════
+    JAVASCRIPT
+    ════════════════════════════════════════════ -->
     <script>
-      // Intersection Observer for scroll reveal
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
+      (function() {
+        'use strict';
+
+        // ── Scroll Reveal ──
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
             if (entry.isIntersecting) {
               entry.target.classList.add('visible');
-
-              // Animate power bars when visible
-              entry.target.querySelectorAll('.power-fill').forEach((bar) => {
-                bar.classList.add('animate');
-              });
             }
           });
-        },
-        { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-      );
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
-      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+        reveals.forEach(function(el) { observer.observe(el); });
 
-      // Counter animation
-      const counterObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const el = entry.target;
-              const target = parseInt(el.dataset.count);
-              let current = 0;
-              const duration = 1200;
-              const step = target / (duration / 16);
-
-              const timer = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                  current = target;
-                  clearInterval(timer);
-                }
-                el.textContent = Math.floor(current);
-              }, 16);
-
-              el.classList.add('stat-pop');
-              counterObserver.unobserve(el);
-            }
+        // ── Stat Counter Animation ──
+        function animateCounters() {
+          var counters = document.querySelectorAll('.stat-number[data-count]');
+          counters.forEach(function(counter) {
+            var target = parseInt(counter.getAttribute('data-count'), 10);
+            if (isNaN(target)) return;
+            var current = 0;
+            var increment = Math.max(1, Math.floor(target / 40));
+            var timer = setInterval(function() {
+              current += increment;
+              if (current >= target) {
+                current = target;
+                clearInterval(timer);
+              }
+              counter.textContent = current;
+            }, 40);
           });
-        },
-        { threshold: 0.5 }
-      );
-
-      document.querySelectorAll('[data-count]').forEach((el) => counterObserver.observe(el));
-
-      // Smooth scroll for nav links
-      document.querySelectorAll('a[href^="#"]').forEach((link) => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const target = document.querySelector(link.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
-      });
-
-      // Nav background on scroll
-      const nav = document.querySelector('nav');
-      let lastScroll = 0;
-      window.addEventListener('scroll', () => {
-        const currentScroll = window.scrollY;
-        if (currentScroll > 100) {
-          nav.style.borderBottomColor = 'oklch(1 0 0 / 0.06)';
-        } else {
-          nav.style.borderBottomColor = 'oklch(1 0 0 / 0.03)';
         }
-        lastScroll = currentScroll;
-      }, { passive: true });
-    </script>
 
+        // ── Trigger stat counters when hero stats are visible ──
+        var statObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              animateCounters();
+              statObserver.disconnect();
+            }
+          });
+        }, { threshold: 0.3 });
+
+        var statContainer = document.querySelector('.stat-number');
+        if (statContainer) {
+          statObserver.observe(statContainer.closest('.grid') || statContainer.parentElement);
+        }
+
+        // ── Smooth nav link scroll ──
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+          anchor.addEventListener('click', function(e) {
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        });
+
+        // ── Hub node staggered pulse (enhancement) ──
+        document.querySelectorAll('.hub-node:not(.center)').forEach(function(node, i) {
+          node.style.animationDelay = (i * 0.3) + 's';
+        });
+
+      })();
+    </script>
   </body>
 </html>
