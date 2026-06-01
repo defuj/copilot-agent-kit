@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/defuj/copilot-agent-kit/main/assets/og-image-3.webp" alt="Copilot Agent KIT Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/defuj/copilot-agent-kit/main/assets/og-image.webp" alt="Copilot Agent KIT Banner" width="100%">
 </p>
 
 # Agent Kit — Setup Guide
@@ -75,11 +75,11 @@ This copies `.github/agents/`, `.github/hooks/`, and `.github/workflows/` into y
 
 ### What Gets Installed
 
-| File/Folder          | Content                           | Required |
-| -------------------- | --------------------------------- | -------- |
-| `.github/agents/`    | 13 agent profiles (`.agent.md`)   | Yes      |
-| `.github/hooks/`     | Automation hooks                  | Optional |
-| `.github/workflows/` | Copilot setup steps workflow      | Optional |
+| File/Folder          | Content                         | Required |
+| -------------------- | ------------------------------- | -------- |
+| `.github/agents/`    | 13 agent profiles (`.agent.md`) | Yes      |
+| `.github/hooks/`     | Automation hooks                | Optional |
+| `.github/workflows/` | Copilot setup steps workflow    | Optional |
 
 ### Manual Copy
 
@@ -95,21 +95,21 @@ After installation, go to [github.com/copilot/agents](https://github.com/copilot
 
 13 agents with **Leader → Subagent** architecture:
 
-| Agent                 | File                          | Role                                                 |
-| --------------------- | ----------------------------- | ---------------------------------------------------- |
-| **IT Leader**         | `it-leader.agent.md`          | Requirements analysis, architecture, task delegation |
-| Frontend (Vue/Nuxt)   | `frontend-nuxt.agent.md`      | Vue/Nuxt implementation (components, Nuxt UI)        |
-| Frontend (React/Next) | `frontend-react.agent.md`     | React/Next.js implementation (RSC, shadcn/ui)        |
-| Backend (Node.js)     | `backend.agent.md`            | Node.js API (Express, Prisma, DTO)                   |
-| Backend (Laravel)     | `laravel.agent.md`            | Laravel (Blade, Livewire, REST API)                  |
-| CodeIgniter 3         | `ci3.agent.md`                | CI3 MVC, REST API, JWT                               |
-| UI/UX Designer        | `designer.agent.md`           | Design system, Stitch, accessibility                 |
-| Code Reviewer / QA    | `reviewer.agent.md`           | Code quality, security audit, testing strategy       |
-| Database Specialist   | `database.agent.md`           | PostgreSQL schema, query optimization, migrations    |
-| DevOps / Infra        | `devops.agent.md`             | CI/CD, Docker, monitoring, infrastructure            |
-| SEO Specialist        | `seo.agent.md`                | Meta tags, structured data, Core Web Vitals          |
-| Android Developer     | `android.agent.md`            | Kotlin, Jetpack Compose, Gradle, Play Store          |
-| Flutter Developer     | `flutter.agent.md`            | Dart, Flutter SDK, Material 3, Firebase              |
+| Agent                 | File                      | Role                                                 |
+| --------------------- | ------------------------- | ---------------------------------------------------- |
+| **IT Leader**         | `it-leader.agent.md`      | Requirements analysis, architecture, task delegation |
+| Frontend (Vue/Nuxt)   | `frontend-nuxt.agent.md`  | Vue/Nuxt implementation (components, Nuxt UI)        |
+| Frontend (React/Next) | `frontend-react.agent.md` | React/Next.js implementation (RSC, shadcn/ui)        |
+| Backend (Node.js)     | `backend.agent.md`        | Node.js API (Express, Prisma, DTO)                   |
+| Backend (Laravel)     | `laravel.agent.md`        | Laravel (Blade, Livewire, REST API)                  |
+| CodeIgniter 3         | `ci3.agent.md`            | CI3 MVC, REST API, JWT                               |
+| UI/UX Designer        | `designer.agent.md`       | Design system, Stitch, accessibility                 |
+| Code Reviewer / QA    | `reviewer.agent.md`       | Code quality, security audit, testing strategy       |
+| Database Specialist   | `database.agent.md`       | PostgreSQL schema, query optimization, migrations    |
+| DevOps / Infra        | `devops.agent.md`         | CI/CD, Docker, monitoring, infrastructure            |
+| SEO Specialist        | `seo.agent.md`            | Meta tags, structured data, Core Web Vitals          |
+| Android Developer     | `android.agent.md`        | Kotlin, Jetpack Compose, Gradle, Play Store          |
+| Flutter Developer     | `flutter.agent.md`        | Dart, Flutter SDK, Material 3, Firebase              |
 
 ### Workflow
 
@@ -171,8 +171,8 @@ Skills provide specialized instructions and workflows for specific tasks.
 | Agent                      | Key Skills                                                                                                                                                                                                                                     |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | IT Leader                  | coding-standards, backend-patterns, frontend-patterns                                                                                                                                                                                          |
-| Frontend Developer (Vue)   | coding-standards, frontend-patterns, frontend-design, web-design-guidelines, nuxt-ui                                                                                                                                                          |
-| Frontend Developer (React) | coding-standards, frontend-patterns, frontend-design, web-design-guidelines, vercel-react-best-practices, vercel-composition-patterns                                                                                                         |
+| Frontend Developer (Vue)   | coding-standards, frontend-patterns, frontend-design, web-design-guidelines, nuxt-ui                                                                                                                                                           |
+| Frontend Developer (React) | coding-standards, frontend-patterns, frontend-design, web-design-guidelines, vercel-react-best-practices, vercel-composition-patterns                                                                                                          |
 | Backend Developer          | coding-standards, backend-patterns, postgres-patterns, security-review                                                                                                                                                                         |
 | UI/UX Designer             | frontend-design, web-design-guidelines, building-components, nuxt-ui                                                                                                                                                                           |
 | Code Reviewer / QA         | coding-standards, security-review, web-design-guidelines                                                                                                                                                                                       |
