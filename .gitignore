@@ -6,6 +6,4 @@ pnpm-lock.yaml
 package.json
 yarn.lock
 template
-.npmignore
-.opencode/config.json
-.opencode/config.*.json
+

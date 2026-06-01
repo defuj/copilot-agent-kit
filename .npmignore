@@ -1,0 +1,8 @@
+.git/
+.gitignore
+.DS_Store
+*.local
+node_modules/
+index.html
+assets/
+AGENTS.md
